@@ -1,0 +1,375 @@
+﻿// faq styles hear start
+
+.faq-area-start-one{
+    .accordion{
+        .accordion-item{
+            background: #FFFFFF;
+            padding: 35px 40px;
+            margin-bottom: 20px;
+            box-shadow: none;
+            border: none;
+            @media #{$sm-layout} {
+                padding: 15px;
+            }
+            h2{
+                button{
+                    background: transparent;
+                    border: none;
+                    box-shadow: none;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 29px;
+                    margin-bottom: 12px;
+                    margin-bottom: 0;
+                    @media #{$large-mobile} {
+                        font-size: 16px;
+                    }
+                }
+                .accordion-button{
+                    position: relative;
+                    &::after{
+                        display: none;
+                    }
+                    &[aria-expanded="true"]{
+                        color: #000000;
+                        i{
+                            &::before{
+                                content: '\f077';
+                            }
+
+                        }
+                    }
+                    i{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 50px;
+                        width: 50px;
+                        background: var(--color-primary);
+                        color: #FFFFFF;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @media #{$sm-layout} {
+                            height: 35px;
+                            width: 35px;
+                            font-size: 14px;
+                            top: 7px;
+                        }
+                    }
+                }
+            }
+            .accordion-body{
+                margin-top: 20px;
+                .inner{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    @media #{$laptop-device} {
+                        align-items: flex-start;
+                    }
+                    @media #{$smlg-device} {
+                        flex-direction: column;
+                    }
+                    .thumb-area{
+                        flex-basis: 70%;
+                        @media #{$laptop-device} {
+                            flex-basis: 100%;
+                        }
+                        @media #{$smlg-device} {
+                            width: 100%;
+                        }
+                        img{
+                            width: 100%;
+                            @media #{$smlg-device} {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .content{
+                        .title{
+                            margin-bottom: 5px;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 19px;
+                            text-transform: uppercase;
+                            margin-bottom: 10px;
+                        }
+                        p.disc{
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: #003B75;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+.rts-single-wized{
+    text-align: center;
+    .thumbnail{
+        img{
+            width: 100%;
+        }
+    }
+    .title{
+        margin-bottom: 10px;
+        margin-top: 28px;
+    }
+    .opc{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #003B75;
+        margin-bottom: 10px;
+    }
+    a.rts-btn{
+        margin: auto;
+    }
+}
+
+
+.main-faq-inner-ac{
+    display: flex;
+    .left-thumbmail{
+        width: 100%;
+        min-width: max-content;
+        img{
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+    .accordion-main-ac-wrapper{
+        position: relative;
+        z-index: 10;
+        width: 912px;
+        margin-left: -470px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding: 100px 80px;
+        margin-top: 256px;
+        .accordion{
+            .accordion-item{
+                background: #FFFFFF;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                border: none;
+                box-shadow: none;
+                padding: 20px 30px;
+                .accordion-header{
+                    background: transparent;
+                    border: none;
+                    box-shadow: none;
+                    button{
+                        border: none;
+                        box-shadow: none;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #000000;
+                        &::after{
+                            display: none;
+                        }
+                        &[aria-expanded="true"]{
+                            border: none;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.accordion-solar-faq{
+    margin-top: 30px;
+    .accordion{
+        .accordion-item{
+            background: #FFFFFF;
+            border: none;
+            box-shadow: none;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+            padding: 10px 25px;
+            @media #{$smlg-device} {
+                padding: 10px 0;
+            }
+            .accordion-header{
+                button{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+
+.faq-solari-image-area{
+    .thumbnail-small{
+        position: relative;
+        max-width: max-content;
+        .vedio-icone{
+            right: 0;
+            top: 50%;
+            position: absolute;
+            .video-play-button{
+                span{
+                    border-left: 15px solid #FFFFFF;
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                }
+                &::after{
+                    background: var(--color-primary);
+                }
+                &::before{
+                    background: rgba(74, 171, 61, 0.342);
+                    border: none;
+                }
+            }
+            p.text{
+                min-width: max-content;
+                margin-top: 10px;
+                margin-left: 65px;
+                color: #000000;
+                font-weight: 700;
+                @media #{$large-mobile} {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.brand-area-h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        @media #{$sm-layout} {
+            max-width: 100px !important;
+        }
+    }
+    @media #{$md-layout} {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    @media #{$sm-layout} {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    img{
+        max-width: 130px;
+        transition: .3s;
+        @media #{$sm-layout} {
+            max-width: 70px !important;
+        }
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
+}
+
+
+
+
+.accordion-solar-faq .accordion .accordion-item .accordion-header button{
+    &::after{
+        background-image: none;
+        content: '\f067';
+        transform: none;
+        display: block;
+        font-family: fontAwesome;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: rgba(74, 171, 61, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-primary);
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    &[aria-expanded="true"]{
+        &::after{
+            content: '\f068';
+            background: var(--color-primary);
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+.single-footer-one-wrapper.two .single-footer-component.first {
+    flex-basis: 39%;
+}
+.faq-8{
+    .faq-solari-image-area{
+        position: relative;
+        margin-right: 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 450px;
+            height: 350px;
+            background: #FFFFFF;
+            z-index: -1;
+        }
+        img{
+            width: 100%;
+            max-height: 430px;
+            height: 430px;
+        }
+    }
+}
+.faq-9{
+    .title-area-left{
+        .title{
+            font-weight: 700;
+            font-family: var(--font-secondary);
+        }
+    }
+    .accordion-solar-faq{
+        .accordion-item{
+            background: #FFFFFF;
+        }
+        .accordion-button{
+            font-weight: 600;
+            font-family: var(--font-secondary);
+        }
+    }
+    
+    .faq-solari-image-area img{
+        height: 445px;
+    }
+    .accordion-item .accordion-header button::after{
+        background: #003B75 !important;
+        color: var(--color-primary-2) !important;
+    }
+    .accordion-header button[aria-expanded="true"]::after{
+        background: var(--color-primary-2) !important;
+        color: var(--color-white) !important;
+    }
+}
+.faq-solari-image-area img {
+	width: 100%;
+	object-fit: cover;
+}
+

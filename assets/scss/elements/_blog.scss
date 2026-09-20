@@ -1,0 +1,547 @@
+﻿// blog style start hear
+
+.blog-single-one{
+    .thumbnail{
+        padding: 0 10px;
+        background: linear-gradient(0deg, #FFFFFF 80%, #000000 80%);
+        display: block;
+        .inner{
+            overflow: hidden;
+            display: block;
+            img{
+                width: 100%;
+                transition: .6s;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+    .head{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-left: 10px solid var(--color-primary);
+        border-right: 10px solid var(--color-primary);
+        .single-info{
+            display: flex;
+            align-items: center;
+            i{
+                color: var(--color-primary);
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 16px;
+                color: var(--color-primary);
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #003B75;
+                margin-left: 8px;
+                margin-bottom: -2px;
+                @media #{$sm-layout} {
+                    font-size: 13px;
+                }
+            }
+            &.date-area{
+                margin-right: 30px;
+                @media #{$sm-layout} {
+                    margin-right: 10px;
+                }
+            }
+        }   
+    }
+    .body{
+        padding: 23px 30px 30px 30px;
+        background: #FFFFFF;
+        a.rts-btn.btn-border{
+            border: 1px solid var(--color-primary) !important;
+            background: #000000;
+        }
+        @media #{$sm-layout} {
+            padding: 15px;
+        }
+        a{
+            .title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+                color: #000000;
+                margin-bottom: 21px;
+                transition: .3s;
+                @media #{$md-layout} {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                @media #{$sm-layout} {
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+                &:hover{
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+
+
+.rts-cl-home-blog{
+    border-radius: 30px;
+    .thumbnail{
+        img{
+            border-radius: 30px 30px 0 0;
+        }
+    }
+    .content-area{
+        padding: 40px;
+        border-radius: 0 0 30px 30px;
+        background: #FFFFFF;
+        .head{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 17px;
+            .single-info{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                i{
+                    color: var(--color-primary);
+                }
+            }
+        }
+        .body{
+            .title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                color: #000000;
+                transition: .3s;
+                &:hover{
+                    color: var(--color-primary);
+                }
+            }
+            .rts-btn.btn-primary{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+
+.index-cleaning-home{
+    .air-condition-swiper-wrapper .swiper-wrapper .swiper-slide .single-case-ac .thumbnail img{
+        border-radius: 30px;
+    }
+    .air-condition-swiper-wrapper .swiper-wrapper .swiper-slide.swiper-slide-active .inner-content p.disc {
+        width: 75%;
+    }
+    .air-condition-swiper-wrapper .swiper-wrapper .swiper-slide .single-case-ac .inner-content {
+        width: 557px;
+        height: 369px;
+    }
+}
+
+.rts-solari-blog-area-start{
+    background: #FFFFFF;
+    position: relative;
+    .stok-bg{
+        margin-left: -250px;
+    }
+}
+
+
+.single-blog-solaric-lg{
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    height: 100%;
+    .thumbnail{
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            width: 100%;
+            transition: .3s;
+            border-radius: 10px;
+        }
+    }
+}
+
+.inner-content-solari-blog{
+    .head{
+        display: flex;
+        align-items: center;
+        padding: 22px 0;
+        margin: 0 20px;
+        border-bottom: 1px solid #EBF4FC;
+        gap: 40px;
+        @media #{$laptop-device} {
+            gap: 15px;
+        }
+        @media #{$sm-layout} {
+            gap: 15px;
+            margin: 0;
+        }
+        @media #{$large-mobile} {
+            gap: 0;
+        }
+        .single{
+            span{
+                @media #{$laptop-device} {
+                    font-size: 12px;
+                }
+            }
+            i{
+                color: var(--color-primary);
+                margin-right: 10px;
+            }
+        }
+    }
+    .body{
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        @media #{$sm-layout} {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        a{
+            margin-bottom: 20px;
+            .title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 34px;
+                transition: .3s;
+                @media #{$large-mobile} {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+            &:hover{
+                .title{
+                    color: var(--color-primary);
+                }
+            }
+        }
+        a.rts-btn{
+            padding: 12px 33px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// blog sm solaric
+.single-blog-solaric-sm{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin-bottom: 24px;
+    @media #{$smlg-device} {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .thumbnail{
+        overflow: hidden;
+        display: block;
+        border-radius: 10px;
+        min-width: max-content;
+        @media #{$smlg-device} {
+            width: 100%;
+        }
+        img{
+            @media #{$smlg-device} {
+                min-width: 100% !important;
+            }
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        img{
+            min-width: max-content;
+            display: block;
+            transition: .3s;
+        }
+    }
+    .inner-content-solari-blog{
+        @media #{$laptop-device} {
+            margin-left: 30px;
+        }
+        .head{
+            margin-bottom: 15px;
+            @media #{$laptop-device} {
+                margin: 0;
+            }
+            @media #{$small-mobile} {
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+            }
+            span{
+                @media #{$small-mobile} {
+                    font-size: 14px;
+                }
+            }
+        }
+        .body{
+            margin-top: 12px;
+            @media #{$laptop-device} {
+                margin: 0;
+            }
+            .title{
+                font-size: 23px;
+                line-height: 34px;
+                @media #{$laptop-device} {
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+                @media #{$smlg-device} {
+                    br{
+                        display: none;
+                    }
+                }
+            }
+            a.rts-btn{
+                background: transparent !important;
+                border: 1px solid #EBF4FC;
+                color: #000000;
+                transition: .3s;
+                &::before{
+                    background: transparent !important;
+                }
+                &:hover{
+                    background: var(--color-primary) !important;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+br{
+    @media #{$smlg-device} {
+        display: none;
+    }
+}
+
+
+
+// blog 
+.blog-style-four{
+    position: relative;
+    display: block;
+    width: 100%;
+    .thumbanil{
+        border-radius: 15px;
+        display: block;
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+        img{
+            width: 100%;
+            transition: .7s;
+        }
+    }
+    .inner-content-blog{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        width: 90%;
+        @media #{$small-mobile} {
+            bottom: 14px;
+            left: 20px;
+        }
+        .head{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+            .date{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                i{
+                    color: #FFFFFF;
+                }
+                .info{
+                    color: #FFFFFF;
+                }
+            }
+        }
+        a{
+            .title{
+                margin-top: 30px !important;
+                margin-bottom: 0;
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 34px;
+                text-transform: capitalize;
+                position: relative;
+                display: inline;
+                background-image: -webkit-gradient(linear, left top, right top, from(var(--color-white)), to(var(--color-white)));
+                background-image: -webkit-linear-gradient(left, var(--color-white) 0%, var(--color-white) 100%);
+                background-image: -o-linear-gradient(left, var(--color-white) 0%, var(--color-white) 100%);
+                background-image: linear-gradient(to right, var(--color-white) 0%, var(--color-white) 100%);
+                background-size: 0px 1px;
+                background-position: 0px 95%;
+                -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+                -o-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+                transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+                padding: 0.1% 0px;
+                background-repeat: no-repeat;
+                br{
+                    @media #{$smlg-device} {
+                        display: none;
+                    }
+                }
+                @media #{$smlg-device} {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    &:hover{
+        .inner-content-blog{
+            a{
+                .title{
+                    background-size: 100% 1px !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+.about-right-content-area-solar-energy{
+    .vedio-area-start .vedio-icone .video-play-button {
+        @media #{$smlg-device} {
+            left: 58%;
+        }
+    }
+}
+.blog-style-7{
+    background: #FFFFFF;
+    .single-blog-solaric-lg{
+        padding: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 15px 55px rgba(0, 0, 0, 0.06);;
+        .thumbnail{
+            border-radius: 0 !important;
+            img{
+                border-radius: 0 !important;
+            }
+        }
+        .inner-content-solari-blog .body a .title{
+            font-weight: 600;
+        }
+        .rts-btn.btn-primary{
+            color: var(--color-heading-1);
+            border-radius: 25px;
+            background: #EBF4FC;
+            border: 1px solid transparent;
+            &::before{
+                background: var(--color-white);
+                border-radius: inherit;
+            }
+            &:hover{
+                background: #000000 !important;
+            }
+            margin-bottom: 30px;
+            &:hover{
+                color: var(--color-white);
+                &::before{
+                    background: var(--color-primary);
+                }
+            }
+        }
+    }
+}
+.blog-style-8{
+    .single-blog-solaric-lg{
+        border-radius: 0;
+        .thumbnail{
+            border-radius: 0;
+            img{
+                border-radius: 0;
+            }
+        }
+    }
+    .single-blog-solaric-sm {
+        border-radius: 0;
+        .thumbnail{
+            border-radius: 0;
+            img{
+                border-radius: 0;
+            }
+        }
+    }
+}
+.blog-style-9{
+    .body{
+        padding: 30px;
+        a h5{
+            font-family: var(--font-secondary);
+            &:hover{
+                color: var(--color-primary-2);
+            }
+            margin-bottom: 30px;
+        }
+    }
+    .header-story{
+        border-bottom: 1px solid #EBF4FC;
+        padding-bottom: 20px;
+        .single{
+            i{
+                color: var(--color-primary-2);
+            }
+            a{
+                &:hover{
+                    color: var(--color-primary-2);
+                }
+            }
+        }
+    }
+    .rts-btn.btn-border{
+        background: transparent !important;
+        border: 1px solid #EBF4FC !important;
+        color: var(--color-heading-1);
+        display: inline-flex;
+        gap: 10px;
+        padding: 14px 25px; 
+        &::before{
+            background: transparent;
+            border-radius: inherit;
+        }
+        &:hover{
+            background: var(--color-heading-1) !important;
+        }
+        &:hover::before{
+            background: var(--color-primary-2) !important;
+        }
+    }
+}
+

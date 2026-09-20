@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Login | Pioneer Systems</title>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+	<link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
+	<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="admin-page">
+	<main class="admin-auth-page">
+		<section class="admin-auth-card">
+			<a href="index.html" class="admin-brand"><img src="assets/images/logo/logo-01.svg" alt="Pioneer Systems"></a>
+			<p class="admin-eyebrow">Pioneer Systems</p>
+			<h1>Admin Login</h1>
+			<p class="admin-muted">Sign in to manage the customer directory.</p>
+			<form id="admin-login-form" class="admin-form">
+				<label for="admin-username">Username</label>
+				<input id="admin-username" name="username" type="text" autocomplete="username" required>
+				<label for="admin-password">Password</label>
+				<input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+				<button class="rts-btn btn-primary" type="submit">Sign In</button>
+				<p id="admin-login-message" class="admin-error" role="alert"></p>
+			</form>
+		</section>
+	</main>
+	<script src="assets/js/admin-login.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+﻿:root {
+
+    // themes color
+    --color-primary: #005CB9;
+    --color-primary-2: #003B75;
+    --color-secondary: #000000;
+    
+    // body color
+    --color-body: #003B75;
+
+    // title color
+    --color-heading-1: #000000;
+
+    --color-white:#FFFFFF;
+
+    // notify Colors
+    --color-success: #005CB9;
+    --color-danger: #003B75;
+    --color-warning: #003B75;
+    --color-info: #005CB9;
+    
+
+    //Social icon colors
+    --color-facebook: #003B75;
+    --color-twitter: #005CB9;
+    --color-youtube: #005CB9;
+    --color-linkedin: #005CB9;
+    --color-pinterest: #003B75;
+    --color-instagram: #003B75;
+    --color-vimeo: #005CB9;
+    --color-twitch: #003B75;
+    --color-discord: #003B75;
+
+
+    // Font weight
+    --p-light: 300;
+    --p-regular: 400;
+    --p-medium: 500;
+    --p-semi-bold: 600;
+    --p-bold: 700;
+    --p-extra-bold: 800;
+    --p-black: 900;
+
+    // Font weight
+    --s-light: 300;
+    --s-regular: 400;
+    --s-medium: 500;
+    --s-semi-bold: 600;
+    --s-bold: 700;
+    --s-extra-bold: 800;
+    --s-black: 900;
+
+
+
+    //transition easing
+    --transition: 0.3s;
+
+
+    // Font Family
+    --font-primary: 'Exo', sans-serif;
+    --font-secondary: 'Albert Sans', sans-serif;
+
+    //Fonts Size
+    --font-size-b1: 16px;
+
+    --font-size-b2: 16px;
+    --font-size-b3: 22px;
+
+
+    //Line Height
+    --line-height-b1: 26px;
+
+    --line-height-b2: 26px;
+    --line-height-b3: 1.7;
+
+
+    // Heading Font
+    --h1: 60px;
+    --h2: 48px;
+    --h3: 30px;
+    --h4: 26px;
+    --h5: 24px;
+    --h6: 18px;
+
+}
+
+// Layouts Variation
+$smlg-device: 'only screen and (max-width: 1199px)';
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';
+

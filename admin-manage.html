@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+    <title>Admin Manage | Pioneer Systems</title>
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.css">
+    <link rel="stylesheet" href="assets/css/plugins/unicons.css">
+    <link rel="stylesheet" href="assets/css/plugins/metismenu.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="admin-page">
+    <header class="admin-header">
+        <a href="index.html" class="admin-brand"><img src="assets/images/logo/logo-01.svg" alt="Pioneer Systems"></a>
+        <div class="admin-header-actions">
+            <span class="admin-welcome">Welcome, Admin</span>
+            <button id="open-logout" class="admin-profile-button" type="button" aria-label="Open logout options" title="Logout">
+                <i class="fa-regular fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <main class="admin-content">
+        <div class="admin-content-heading">
+            <div>
+                <p class="admin-eyebrow">Directory management</p>
+                <h1>Customer List</h1>
+            </div>
+            <div class="admin-controls">
+                <button id="customer-sort-toggle" class="admin-sort-toggle" type="button" aria-pressed="false">
+                    <i class="fa-regular fa-arrow-down-short-wide" aria-hidden="true"></i>
+                    <span>Oldest first</span>
+                </button>
+                <button id="open-add-customer" class="rts-btn btn-primary" type="button"><i class="fa-regular fa-plus"></i> Add Customer</button>
+            </div>
+        </div>
+        <p id="admin-status-message" class="admin-status" role="status"></p>
+    <section class="client-customer-area rts-section-gapBottom">
+        <div class="container">
+            <div class="title-area-center mb--40">
+                <p class="pre"><span>Our Selected</span> Customer List</p>
+            </div>
+            <div class="client-customer-table-wrap">
+                <table class="client-customer-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Locations</th>
+                            <th scope="col">Products</th>
+                            <th scope="col" class="admin-actions-heading">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-customer-list">
+                        <tr>
+                            <td colspan="4">Loading customer list...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- selected customer list end -->
+    </main>
+
+    <dialog id="add-customer-modal" class="admin-modal">
+        <form method="dialog" id="add-customer-form" class="admin-modal-form">
+            <div class="admin-modal-heading"><h2 id="customer-modal-title">Add Customer</h2><button id="close-add-customer" type="button" class="admin-modal-close" aria-label="Close">&times;</button></div>
+            <label for="customer-name">Customer Name</label>
+            <input id="customer-name" name="customerName" type="text" required>
+            <label for="customer-location">Locations</label>
+            <input id="customer-location" name="locations" type="text" required>
+            <label for="customer-products">Products</label>
+            <textarea id="customer-products" name="products" rows="4" required></textarea>
+            <button id="save-customer-button" class="rts-btn btn-primary" type="submit">Save Customer</button>
+        </form>
+    </dialog>
+
+    <dialog id="delete-modal" class="admin-modal admin-confirm-modal">
+        <div class="admin-modal-form"><div class="admin-modal-heading"><h2>Delete Customer?</h2></div><p class="admin-muted">This customer will be removed from the directory.</p><div class="admin-modal-actions"><button id="cancel-delete" class="rts-btn btn-secondary" type="button">Cancel</button><button id="confirm-delete" class="rts-btn btn-primary" type="button">Delete</button></div></div>
+    </dialog>
+
+    <dialog id="logout-modal" class="admin-modal admin-confirm-modal">
+        <div class="admin-modal-form"><div class="admin-modal-heading"><h2>Logout?</h2></div><p class="admin-muted">Are you sure you want to sign out of the admin panel?</p><div class="admin-modal-actions"><button id="cancel-logout" class="rts-btn btn-secondary" type="button">Cancel</button><button id="confirm-logout" class="rts-btn btn-primary" type="button">Logout</button></div></div>
+    </dialog>
+
+    <!-- Footer style two -->
+    <!-- rts footer two area start -->
+    <div class="rts-footer-one  footer-bg-two">
+        
+        <div class="container">
+            <div class="row pb--20 pt--20 border-top-copyright">
+                <div class="col-lg-12">
+                    <!-- copyright area start -->
+                    <div class="copyright-area-two">
+                        <div class="left">
+                            <p>Copyright 2023. All Rights Reserved.</p>
+                        </div>
+                        <!-- <div class="right">
+                        <ul>
+                            <li><a href="#">Terms & conditions</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div> -->
+                    </div>
+                    <!-- copyright area end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rts footer area one end -->
+    <!-- Footer style two End -->
+    <!-- rts footer area one end -->
+    <!-- Scripts style two -->
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+            </path>
+        </svg>
+    </div>
+
+
+    <!-- pre loader start -->
+    <div id="elevate-load">
+        <div class="loader-wrapper">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- pre loader end -->
+
+
+    <div class="search-input-area">
+        <div class="container">
+            <div class="search-input-inner">
+                <div class="input-div">
+                    <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #">
+                    <button><i class="far fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+    </div>
+
+    <div id="anywhere-home" class="">
+    </div>
+
+
+    <!-- jquery js -->
+    <script src="assets/js/plugins/jquery.min.js"></script>
+    <script src="assets/js/vendor/jqueryui.js"></script>
+    <script src="assets/js/plugins/counter-up.js"></script>
+    <script src="assets/js/plugins/swiper.js"></script>
+    <script src="assets/js/plugins/metismenu.js"></script>
+    <script src="assets/js/vendor/waypoint.js"></script>
+    <script src="assets/js/vendor/waw.js"></script>
+    <script src="assets/js/plugins/gsap.min.js"></script>
+    <script src="assets/js/plugins/scrolltigger.js"></script>
+    <script src="assets/js/vendor/split-text.js"></script>
+    <script src="assets/js/vendor/contact.form.js"></script>
+    <script src="assets/js/vendor/split-type.js"></script>
+    <script src="assets/js/plugins/jquery-timepicker.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/admin-manage.js"></script>
+    <!-- Scripts style two End -->
+</body>
+
+</html>
