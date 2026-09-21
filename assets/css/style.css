@@ -23422,9 +23422,9 @@ p {
   text-align: center;
 }
 
-.admin-back-link::before {
+/* .admin-back-link::before {
   background: var(--color-primary);
-}
+} */
 
 .admin-modal {
   width: min(100% - 32px, 500px);
