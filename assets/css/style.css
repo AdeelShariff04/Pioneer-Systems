@@ -13441,7 +13441,8 @@ nav ul li a {
 }
 
 .bg-breadcrumb {
-  background-image: url(../images/banner/breadcrumb/01.jpg);
+  /* background-image: url(../images/banner/breadcrumb/01.jpg); */
+  background-image: url(../images/posters/hero-inner.png);
 }
 
 .banner-one-swiper--wrapper-area .banner-main-wrapper-one .pre-title {
@@ -13784,7 +13785,8 @@ nav ul li a {
 }
 
 .banner-two-main-wrapper-solaric {
-  background-image: url(../images/banner/08.jpg);
+  /* background-image: url(../images/banner/08.jpg); */
+  background-image: url(../images/posters/hero-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13797,7 +13799,8 @@ nav ul li a {
 }
 
 .banner-two-main-wrapper-solaric.three {
-  background-image: url(../images/banner/14.jpg);
+  /* background-image: url(../images/banner/14.jpg); */
+  background-image: url(../images/posters/hero-3.png);
 }
 
 .banner-solari-2-content span {
@@ -23179,7 +23182,7 @@ p {
 
 .admin-page {
   min-height: 100vh;
-  background: #FFFFFF;
+  background: #EBF4FC;
 }
 
 .admin-header {
