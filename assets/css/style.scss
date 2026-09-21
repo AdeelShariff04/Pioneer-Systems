@@ -16114,6 +16114,16 @@ nav ul li a {
     border: transparent;
 }
 
+.button-solari-banner-area .vedio-icone .video-play-button i {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+    font-size: 18px;
+}
+
 .button-solari-banner-area .vedio-icone .video-play-button::before {
     background: rgba(255, 255, 255, 0.3843137255);
     border: transparent;
@@ -31725,11 +31735,7 @@ edit .quantity-edit button {
 
 .progress-wrap::after {
     position: absolute;
-    font-family: "unicons";
-    content: "\e84b";
-    text-align: center;
-    line-height: 46px;
-    font-size: 24px;
+    content: "";
     color: var(--color-primary);
     left: 0;
     top: 0;
@@ -31747,25 +31753,21 @@ edit .quantity-edit button {
 
 .progress-wrap:hover::after {
     opacity: 1;
-    content: "\e84b";
     border: 2px solid var(--color-primary);
 }
 
 .progress-wrap::before {
     position: absolute;
-    font-family: "unicons";
-    content: "\e84b";
-    text-align: center;
-    line-height: 46px;
-    font-size: 24px;
-    opacity: 0;
-    background: var(--color-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    left: 0;
-    top: 0;
-    height: 46px;
-    width: 46px;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid var(--color-primary);
+    border-right: 3px solid var(--color-primary);
+    background: transparent;
+    transform: translate(-50%, -35%) rotate(-45deg);
+    opacity: 1;
     cursor: pointer;
     display: block;
     z-index: 2;
@@ -31773,7 +31775,7 @@ edit .quantity-edit button {
 }
 
 .progress-wrap:hover::before {
-    opacity: 0;
+    opacity: 1;
 }
 
 .progress-wrap svg path {
