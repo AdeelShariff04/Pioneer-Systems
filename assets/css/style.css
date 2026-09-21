@@ -23210,6 +23210,16 @@ p {
   font-weight: 600;
 }
 
+.admin-view-clients {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 18px;
+  color: #FFFFFF !important;
+  white-space: nowrap;
+}
+
 .admin-profile-button {
   display: inline-flex;
   align-items: center;
@@ -23352,21 +23362,24 @@ p {
 
 .admin-auth-page {
   display: grid;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 100svh;
   place-items: center;
-  padding: 24px;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .admin-auth-card {
   width: min(100%, 440px);
-  padding: 42px;
+  padding: 32px;
   background: #FFFFFF;
   box-shadow: 0 20px 60px rgba(31, 31, 37, 0.08);
 }
 
 .admin-auth-card .admin-brand {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 }
 
 .admin-form,
@@ -23391,6 +23404,23 @@ p {
   min-height: 20px;
   margin: 4px 0 0;
   color: #003B75;
+}
+
+.admin-back-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 14px;
+  padding: 12px 20px;
+  color: #FFFFFF !important;
+  background: #000000;
+  text-align: center;
+}
+
+.admin-back-link::before {
+  background: var(--color-primary);
 }
 
 .admin-modal {
@@ -23468,6 +23498,30 @@ p {
 
   .admin-auth-card {
     padding: 28px 22px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .admin-auth-card {
+    padding: 20px;
+  }
+
+  .admin-auth-card .admin-brand {
+    margin-bottom: 14px;
+  }
+
+  .admin-form {
+    gap: 8px;
+  }
+
+  .admin-form input {
+    min-height: 40px;
+  }
+
+  .admin-form .rts-btn,
+  .admin-back-link {
+    min-height: 42px;
+    padding: 10px 18px;
   }
 }
 
