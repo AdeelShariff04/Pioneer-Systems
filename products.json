@@ -1,100 +1,134 @@
 {
-    "ups-inverter": {
-        "id": "ups-inverter",
-        "category": "AC Power Products",
-        "title": "UPS & Inverter Solutions",
-        "description": "Pioneer Systems provides dependable AC UPS and inverter solutions for homes, businesses, data rooms, and industrial operations. Our portfolio combines online double-conversion UPS systems, line-interactive backup, and pure sine wave inverters to protect sensitive equipment from outages, surges, voltage instability, and poor power quality.",
-        "quote": "Reliable AC backup and clean power conversion engineered for continuity across residential, commercial, and industrial environments.",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "True online double-conversion UPS systems with zero transfer time for critical loads.",
-            "Pure sine wave inverters compatible with sensitive electronics and modern active PFC power supplies.",
-            "Wide input voltage and frequency windows designed for unstable grids and standby generators.",
-            "Scalable battery configurations for short backup and extended autonomy requirements.",
-            "Advanced overload, short-circuit, surge, and thermal protection for connected equipment.",
-            "LCD and network monitoring options for live load, battery, alarm, and event visibility.",
-            "Static and maintenance bypass options supporting safe servicing without load interruption.",
-            "Commercial and industrial configurations available for single-phase and three-phase applications."
-        ],
-        "specReportUrl": "specs/xl-plus-spec-report.pdf",
-        "vendors": ["Deutsche Power"]
-    },
-    "batteries": {
-        "id": "batteries",
-        "category": "DC Power Products",
-        "title": "Industrial Battery Systems",
-        "description": "Pioneer Systems supplies, installs, and commissions certified industrial battery banks, including VRLA, AGM, GEL, and tubular OPzV/OPzS stationary cells. These systems provide reliable energy storage for UPS systems, solar PV installations, electrical substations, and telecom nodes, with configurations selected for standby or deep-cycle service.",
-        "quote": "Factory-certified industrial storage cells offering high cyclic endurance, low self-discharge, and dependable service life for critical infrastructure.",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "High-purity lead-calcium-tin alloy grids minimizing corrosion and fluid electrolysis.",
-            "AGM, GEL, and tubular OPzV/OPzS chemistries for varied standby and cyclic applications.",
-            "Extended design life for stationary float service and frequent deep-discharge environments.",
-            "Low self-discharge rates supporting extended storage without significant capacity loss.",
-            "Flame-retardant casings, safety release valves, insulated connectors, and corrosion-resistant terminals.",
-            "Battery banks engineered for UPS, solar, telecom, and substation installations.",
-            "Factory load testing and compliance checks to confirm rated capacity and discharge curves.",
-            "Installation and commissioning support for complete energy storage deployments."
-        ],
-        "specReportUrl": "specs/batteries-spec-report.pdf",
-        "vendors": ["Deutsche Power"]
-    },
-    "it-infrastructure": {
-        "id": "it-infrastructure",
-        "category": "IT Infrastructure",
-        "title": "IT & Infrastructure Solutions",
-        "description": "We provide end-to-end IT and enterprise infrastructure solutions engineered to empower organizations with maximum reliability, high performance, seamless scalability, and robust cybersecurity. Our expertise spans modern data centers, cloud environments, enterprise networking, and intelligence-led protection.",
-        "quote": "Comprehensive technical capabilities and a trusted partner ecosystem for resilient, secure, and scalable enterprise infrastructure.",
-        "featureHeading": "Core Solution Offerings",
-        "features": [
-            "Cybersecurity and threat protection: network defense, next-generation firewalls, EDR, and unified threat management. Key brands: Fortinet, Sangfor, Trend Micro, Kaspersky.",
-            "Cloud platforms and virtualization: HCI, private and hybrid cloud deployments, virtualization, and enterprise migrations. Key brands: Sangfor Cloud (HCI), Nexa VM, H3C Cloud, Microsoft.",
-            "Enterprise servers and storage: rack and blade servers, SAN/NAS storage, compute clusters, and data center hardware. Key brands: Dell, HPE, H3C, Huawei.",
-            "Networking and wireless infrastructure: enterprise routing, switching, high-density wireless access points, network architecture, and security policies. Key brands: Aruba, H3C, TP-Link, D-Link, HPE, Huawei.",
-            "Surveillance and physical connectivity: IP surveillance, optical fiber networks, structured copper cabling, and physical network topology. Key brands: TP-Link, Corning, D-Link.",
-            "Smart rack and modular data center systems: precision cooling, PDUs, intelligent racks, automated fire suppression, and environmental monitoring. Key brand: Deutsche Power MDC."
-        ],
-        "specReportUrl": "specs/it-infrastructure-spec-report.pdf",
-        "vendors": ["Dell", "HPE", "HP", "H3C", "TP-Link", "Corning", "D-Link", "Nexa VM", "Fortinet", "Sangfor", "Trend Micro", "Kaspersky", "Huawei", "Microsoft", "Deutsche Power"]
-    },
-    "led-lights": {
-        "id": "led-lights",
-        "category": "AC / DC Products",
-        "title": "Commercial & Industrial LED Lighting",
-        "description": "Pioneer Systems offers commercial and industrial LED and SMD luminaires designed to replace legacy fixtures. High-lumen LED arrays, constant-current drivers, thermal management, and surge protection deliver efficient, uniform illumination for manufacturing plants, warehouses, logistics hubs, and offices.",
-        "quote": "Industrial-grade LED luminaires lowering lighting consumption while delivering flicker-free, long-life illumination.",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "High luminous efficacy for lower facility lighting energy consumption.",
-            "Die-cast aluminum heat sinks for effective LED thermal management.",
-            "Long operating life with low lumen depreciation over time.",
-            "Constant-current drivers with integrated surge protection.",
-            "High CRI output for accurate color and improved workspace visibility.",
-            "Flicker-free operation for visual comfort and production environments.",
-            "IP-rated housings and impact-resistant lenses for demanding locations.",
-            "Retrofitting options for high-bay, floodlight, and modular grid fixtures."
-        ],
-        "specReportUrl": "specs/led-lights-specs.pdf",
-        "vendors": ["Deutsche Power"]
-    },
-    "solar": {
-        "id": "solar",
-        "category": "PV / Solar Products",
-        "title": "Turnkey Solar PV & Hybrid Systems",
-        "description": "Pioneer Systems provides complete engineering, procurement, and construction services for turnkey photovoltaic solar systems across residential, commercial, and industrial sites. We combine Tier-1 PV modules with on-grid, off-grid, and hybrid inverters, scalable storage, monitoring, and net-metering support.",
-        "quote": "Turnkey renewable power systems combining efficient PV generation, hybrid storage, and practical energy independence.",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Tier-1 monocrystalline and bifacial modules for high energy yield.",
-            "Multi-MPPT inverters with high conversion efficiency and wide operating windows.",
-            "Turnkey net-metering facilitation, utility approvals, and grid tie-in support.",
-            "Hybrid topologies supporting self-consumption, battery backup, and grid feed-in.",
-            "Engineered mounting structures designed for local wind and site conditions.",
-            "DC and AC surge protection with ground-fault isolation.",
-            "Cloud monitoring for generation, load, battery, and system diagnostics.",
-            "System sizing and lifecycle support focused on reliable returns and lower emissions."
-        ],
-        "specReportUrl": "specs/solar-spec-report.pdf",
-        "vendors": ["Deutsche Power"]
-    }
+  "ups-inverter": {
+    "id": "ups-inverter",
+    "category": "AC Power Products",
+    "title": "UPS & Inverter Solutions",
+    "images": [
+      "assets/images/products/ups-inverter/01.jpg",
+      "assets/images/products/ups-inverter/02.jpg",
+      "assets/images/products/ups-inverter/03.jpg",
+      "assets/images/products/ups-inverter/04.jpg"
+    ],
+    "description": "Pioneer Systems provides dependable AC UPS and inverter solutions for homes, businesses, data rooms, and industrial operations. Our portfolio combines online double-conversion UPS systems, line-interactive backup, and pure sine wave inverters to protect sensitive equipment from outages, surges, voltage instability, and poor power quality.",
+    "quote": "Reliable AC backup and clean power conversion engineered for continuity across residential, commercial, and industrial environments.",
+    "featureHeading": "Key Technical Capabilities",
+    "features": [
+      "True online double-conversion UPS systems with zero transfer time for critical loads.",
+      "Pure sine wave inverters compatible with sensitive electronics and modern active PFC power supplies.",
+      "Wide input voltage and frequency windows designed for unstable grids and standby generators.",
+      "Scalable battery configurations for short backup and extended autonomy requirements.",
+      "Advanced overload, short-circuit, surge, and thermal protection for connected equipment.",
+      "LCD and network monitoring options for live load, battery, alarm, and event visibility.",
+      "Static and maintenance bypass options supporting safe servicing without load interruption.",
+      "Commercial and industrial configurations available for single-phase and three-phase applications."
+    ],
+    "specReportUrl": "specs/xl-plus-spec-report.pdf",
+    "vendors": ["Deutsche Power"]
+  },
+  "batteries": {
+    "id": "batteries",
+    "category": "DC Power Products",
+    "title": "Industrial Battery Systems",
+    "images": [
+      "assets/images/products/batteries/01.jpg",
+      "assets/images/products/batteries/02.jpg",
+      "assets/images/products/batteries/03.jpg",
+      "assets/images/products/batteries/04.jpg"
+    ],
+    "description": "Pioneer Systems supplies, installs, and commissions certified industrial battery banks, including VRLA, AGM, GEL, and tubular OPzV/OPzS stationary cells. These systems provide reliable energy storage for UPS systems, solar PV installations, electrical substations, and telecom nodes, with configurations selected for standby or deep-cycle service.",
+    "quote": "Factory-certified industrial storage cells offering high cyclic endurance, low self-discharge, and dependable service life for critical infrastructure.",
+    "featureHeading": "Key Technical Capabilities",
+    "features": [
+      "High-purity lead-calcium-tin alloy grids minimizing corrosion and fluid electrolysis.",
+      "AGM, GEL, and tubular OPzV/OPzS chemistries for varied standby and cyclic applications.",
+      "Extended design life for stationary float service and frequent deep-discharge environments.",
+      "Low self-discharge rates supporting extended storage without significant capacity loss.",
+      "Flame-retardant casings, safety release valves, insulated connectors, and corrosion-resistant terminals.",
+      "Battery banks engineered for UPS, solar, telecom, and substation installations.",
+      "Factory load testing and compliance checks to confirm rated capacity and discharge curves.",
+      "Installation and commissioning support for complete energy storage deployments."
+    ],
+    "specReportUrl": "specs/batteries-spec-report.pdf",
+    "vendors": ["Deutsche Power"]
+  },
+  "it-infrastructure": {
+    "id": "it-infrastructure",
+    "category": "IT Infrastructure",
+    "title": "IT & Infrastructure Solutions",
+    "images": [
+      "assets/images/products/it/1.png",
+      "assets/images/products/it/2.png",
+      "assets/images/products/it/3.png",
+      "assets/images/products/it/4.png"
+    ],
+    "description": "We provide end-to-end IT and enterprise infrastructure solutions engineered to empower organizations with maximum reliability, high performance, seamless scalability, and robust cybersecurity. Our expertise spans modern data centers, cloud environments, enterprise networking, and intelligence-led protection.",
+    "quote": "Comprehensive technical capabilities and a trusted partner ecosystem for resilient, secure, and scalable enterprise infrastructure.",
+    "featureHeading": "Core Solution Offerings",
+    "features": [
+      "<strong>Next-Gen Cybersecurity & Threat Defense:</strong> Unified network firewalls, proactive endpoint detection (EDR), and zero-trust perimeter defense.",
+      "<strong>Hybrid Cloud & Virtualization (HCI):</strong> Scalable hyper-converged infrastructure, private cloud deployments, and zero-downtime workload migrations.",
+      "<strong>Enterprise Compute & SAN/NAS Storage:</strong> High-density rack/blade servers and fault-tolerant storage clusters engineered for mission-critical data.",
+      "<strong>Enterprise Routing, Switching & Wi-Fi:</strong> High-throughput core network architecture, managed Layer-3 switching, and high-density wireless coverage.",
+      "<strong>Structured Cabling & IP Surveillance:</strong> High-speed fiber backbones, certified Cat6/6A copper infrastructure, and AI-enabled HD IP monitoring.",
+      "<strong>Modular Data Centers & Smart Racks:</strong> Turnkey micro-data centers integrated with in-row precision cooling, intelligent PDUs, and environmental telemetry."
+    ],
+    "specReportUrl": "specs/it-infrastructure-spec-report.pdf",
+    "vendors": [
+      "Dell", "HPE", "HP", "H3C", "TP-Link", "Corning", "D-Link", 
+      "Nexa VM", "Fortinet", "Sangfor", "Trend Micro", "Kaspersky", 
+      "Huawei", "Microsoft", "Deutsche Power"
+    ]
+  },
+  "led-lights": {
+    "id": "led-lights",
+    "category": "AC / DC Products",
+    "title": "Commercial & Industrial LED Lighting",
+    "images": [
+      "assets/images/products/led-lights/01.jpg",
+      "assets/images/products/led-lights/02.jpg",
+      "assets/images/products/led-lights/03.jpg",
+      "assets/images/products/led-lights/04.jpg"
+    ],
+    "description": "Pioneer Systems offers commercial and industrial LED and SMD luminaires designed to replace legacy fixtures. High-lumen LED arrays, constant-current drivers, thermal management, and surge protection deliver efficient, uniform illumination for manufacturing plants, warehouses, logistics hubs, and offices.",
+    "quote": "Industrial-grade LED luminaires lowering lighting consumption while delivering flicker-free, long-life illumination.",
+    "featureHeading": "Key Technical Capabilities",
+    "features": [
+      "High luminous efficacy for lower facility lighting energy consumption.",
+      "Die-cast aluminum heat sinks for effective LED thermal management.",
+      "Long operating life with low lumen depreciation over time.",
+      "Constant-current drivers with integrated surge protection.",
+      "High CRI output for accurate color and improved workspace visibility.",
+      "Flicker-free operation for visual comfort and production environments.",
+      "IP-rated housings and impact-resistant lenses for demanding locations.",
+      "Retrofitting options for high-bay, floodlight, and modular grid fixtures."
+    ],
+    "specReportUrl": "specs/led-lights-specs.pdf",
+    "vendors": ["Deutsche Power"]
+  },
+  "solar": {
+    "id": "solar",
+    "category": "PV / Solar Products",
+    "title": "Turnkey Solar PV & Hybrid Systems",
+    "images": [
+      "assets/images/products/solar/01.jpg",
+      "assets/images/products/solar/02.jpg",
+      "assets/images/products/solar/03.jpg",
+      "assets/images/products/solar/04.jpg"
+    ],
+    "description": "Pioneer Systems provides complete engineering, procurement, and construction services for turnkey photovoltaic solar systems across residential, commercial, and industrial sites. We combine Tier-1 PV modules with on-grid, off-grid, and hybrid inverters, scalable storage, monitoring, and net-metering support.",
+    "quote": "Turnkey renewable power systems combining efficient PV generation, hybrid storage, and practical energy independence.",
+    "featureHeading": "Key Technical Capabilities",
+    "features": [
+      "Tier-1 monocrystalline and bifacial modules for high energy yield.",
+      "Multi-MPPT inverters with high conversion efficiency and wide operating windows.",
+      "Turnkey net-metering facilitation, utility approvals, and grid tie-in support.",
+      "Hybrid topologies supporting self-consumption, battery backup, and grid feed-in.",
+      "Engineered mounting structures designed for local wind and site conditions.",
+      "DC and AC surge protection with ground-fault isolation.",
+      "Cloud monitoring for generation, load, battery, and system diagnostics.",
+      "System sizing and lifecycle support focused on reliable returns and lower emissions."
+    ],
+    "specReportUrl": "specs/solar-spec-report.pdf",
+    "vendors": ["Deutsche Power"]
+  }
 }

@@ -4,119 +4,102 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("product-search");
     const searchButton = document.getElementById("product-search-button");
 
-    if (!productGrid || !categoryList || !searchInput) return;
-    productGrid.innerHTML = "";
+    if (!productGrid) return;
 
-    fetch("products.json")
-        .then((response) => {
-            if (!response.ok) throw new Error("Unable to load products");
-            return response.json();
-        })
-        .then((productsData) => {
-            const products = Object.values(productsData).filter((product) => product.id === "it-infrastructure");
-            const categories = ["All products", ...new Set(products.map((product) => product.category))];
-            let selectedCategory = "All products";
+    // Grab all HTML cards already written inside the grid
+    const cards = Array.from(productGrid.children);
+    if (!cards.length) return;
 
-            const renderCategories = () => {
-                categoryList.innerHTML = "";
-                categories.forEach((category, index) => {
-                    const list = document.createElement("ul");
-                    list.className = "single-categories";
-                    const item = document.createElement("li");
-                    const link = document.createElement("a");
-                    const icon = document.createElement("i");
+    // Extract unique categories directly from the HTML cards
+    const rawCategories = cards.map((card) => {
+        const catElem = card.querySelector(".content .pre");
+        return catElem ? catElem.textContent.trim() : "";
+    }).filter(Boolean);
 
-                    link.href = "#product-grid";
-                    link.textContent = category;
-                    link.className = index === 0 ? "active" : "";
-                    link.setAttribute("aria-pressed", String(index === 0));
-                    icon.className = "far fa-long-arrow-right";
-                    link.appendChild(icon);
+    const categories = ["All products", ...new Set(rawCategories)];
+    let selectedCategory = "All products";
 
-                    link.addEventListener("click", (event) => {
-                        event.preventDefault();
-                        selectedCategory = category;
-                        categoryList.querySelectorAll("a").forEach((categoryLink) => {
-                            categoryLink.classList.remove("active");
-                            categoryLink.setAttribute("aria-pressed", "false");
-                        });
-                        link.classList.add("active");
-                        link.setAttribute("aria-pressed", "true");
-                        renderProducts();
-                    });
+    // Filter cards based on search input and active category
+    const filterProducts = () => {
+        const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
+        let visibleCount = 0;
 
-                    item.appendChild(link);
-                    list.appendChild(item);
-                    categoryList.appendChild(list);
-                });
-            };
+        cards.forEach((card) => {
+            const categoryElem = card.querySelector(".content .pre");
+            const titleElem = card.querySelector(".content .title");
 
-            const renderProducts = () => {
-                const query = searchInput.value.trim().toLowerCase();
-                const visibleProducts = products.filter((product) => {
-                    const matchesCategory = selectedCategory === "All products" || product.category === selectedCategory;
-                    const matchesSearch = product.title.toLowerCase().includes(query);
-                    return matchesCategory && matchesSearch;
-                });
+            const cardCategory = categoryElem ? categoryElem.textContent.trim() : "";
+            const cardTitle = titleElem ? titleElem.textContent.trim().toLowerCase() : "";
 
-                productGrid.innerHTML = "";
-                if (!visibleProducts.length) {
-                    const message = document.createElement("p");
-                    message.className = "product-filter-message";
-                    message.textContent = "No products found.";
-                    productGrid.appendChild(message);
-                    return;
-                }
+            const matchesCategory = selectedCategory === "All products" || cardCategory === selectedCategory;
+            const matchesSearch = !query || cardTitle.includes(query);
 
-                visibleProducts.forEach((product, index) => {
-                    const column = document.createElement("div");
-                    column.className = "col-lg-6 col-md-6 col-sm-6 col-12";
-                    const card = document.createElement("div");
-                    card.className = "project-one-wrapper";
-
-                    const shape = document.createElement("div");
-                    shape.className = "shape";
-                    shape.innerHTML = '<img src="assets/images/project/shape/01.png" alt="shape">';
-
-                    const thumbnail = document.createElement("a");
-                    thumbnail.className = "thumbnail";
-                    thumbnail.href = `product-detail.html?product=${encodeURIComponent(product.id)}`;
-                    const image = document.createElement("img");
-                    image.src = `assets/images/project/${String((index % 4) + 1).padStart(2, "0")}.jpg`;
-                    image.alt = product.title;
-                    thumbnail.appendChild(image);
-
-                    const content = document.createElement("div");
-                    content.className = "content";
-                    const category = document.createElement("span");
-                    category.className = "pre";
-                    category.textContent = product.category;
-                    const titleLink = document.createElement("a");
-                    titleLink.href = thumbnail.href;
-                    const title = document.createElement("h5");
-                    title.className = "title";
-                    title.textContent = product.title;
-                    titleLink.appendChild(title);
-                    const contentShape = document.createElement("img");
-                    contentShape.src = "assets/images/project/shape/02.png";
-                    contentShape.alt = "shape";
-                    content.append(category, titleLink, contentShape);
-                    card.append(shape, thumbnail, content);
-                    column.appendChild(card);
-                    productGrid.appendChild(column);
-                });
-            };
-
-            searchInput.addEventListener("input", renderProducts);
-            searchButton?.addEventListener("click", () => {
-                searchInput.focus();
-                renderProducts();
-            });
-            renderCategories();
-            renderProducts();
-        })
-        .catch((error) => {
-            console.error("Product catalog loading error:", error);
-            productGrid.innerHTML = "<p class=\"product-filter-message\">Products are currently unavailable.</p>";
+            if (matchesCategory && matchesSearch) {
+                card.style.display = "";
+                visibleCount++;
+            } else {
+                card.style.display = "none";
+            }
         });
+
+        // Toggle "No products found" message
+        let noResults = document.getElementById("no-products-msg");
+        if (visibleCount === 0) {
+            if (!noResults) {
+                noResults = document.createElement("p");
+                noResults.id = "no-products-msg";
+                noResults.className = "product-filter-message";
+                noResults.textContent = "No products found.";
+                productGrid.appendChild(noResults);
+            }
+            noResults.style.display = "block";
+        } else if (noResults) {
+            noResults.style.display = "none";
+        }
+    };
+
+    // Render Category Sidebar Tabs
+    if (categoryList) {
+        categoryList.innerHTML = "";
+        categories.forEach((category, index) => {
+            const list = document.createElement("ul");
+            list.className = "single-categories";
+            const item = document.createElement("li");
+            const link = document.createElement("a");
+
+            link.href = "#";
+            link.innerHTML = `${category} <i class="far fa-long-arrow-right"></i>`;
+            link.className = index === 0 ? "active" : "";
+            link.setAttribute("aria-pressed", String(index === 0));
+
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                selectedCategory = category;
+
+                categoryList.querySelectorAll("a").forEach((catLink) => {
+                    catLink.classList.remove("active");
+                    catLink.setAttribute("aria-pressed", "false");
+                });
+
+                link.classList.add("active");
+                link.setAttribute("aria-pressed", "true");
+                filterProducts();
+            });
+
+            item.appendChild(link);
+            list.appendChild(item);
+            categoryList.appendChild(list);
+        });
+    }
+
+    // Attach search events
+    if (searchInput) {
+        searchInput.addEventListener("input", filterProducts);
+    }
+    if (searchButton && searchInput) {
+        searchButton.addEventListener("click", () => {
+            searchInput.focus();
+            filterProducts();
+        });
+    }
 });

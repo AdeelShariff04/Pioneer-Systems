@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Extract ?product=slug from URL
     const urlParams = new URLSearchParams(window.location.search);
-    const productKey = urlParams.get("product") || "ups-inverter"; // Default fallback
+    const productKey = urlParams.get("product") || "ups-inverter";
 
     const inquiryForm = document.getElementById("product-inquiry-form");
     if (inquiryForm) {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. Fetch or load product data
+    // 2. Fetch products data
     fetch("products.json")
         .then((response) => {
             if (!response.ok) {
@@ -28,10 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function renderProductDetails(product) {
-    // Update Page & Breadcrumb Metadata
+    if (!product) return;
+
+    // Update Browser Tab Title
     document.title = `${product.title} | Pioneer System`;
 
-    // Map content elements
+    // Map DOM elements
     const categoryEl = document.getElementById("product-category");
     const titleEl = document.getElementById("product-title");
     const descEl = document.getElementById("product-description");
@@ -40,14 +42,38 @@ function renderProductDetails(product) {
     const featuresContainer = document.getElementById("product-features-container");
     const specBtnEl = document.getElementById("product-spec-btn");
     const partnersContainer = document.getElementById("product-partners");
+    const galleryRow = document.getElementById("product-gallery-row");
 
-    if (categoryEl) categoryEl.textContent = product.category;
-    if (titleEl) titleEl.textContent = product.title;
-    if (descEl) document.getElementById("product-description").textContent = product.description;
-    if (quoteEl) quoteEl.textContent = product.quote;
-    if (headingEl && product.featureHeading) headingEl.textContent = product.featureHeading;
+    // Populate Headings & Text
+    if (categoryEl) categoryEl.textContent = product.category || "";
+    if (titleEl) titleEl.textContent = product.title || "";
+    if (descEl) descEl.textContent = product.description || "";
+    if (quoteEl) quoteEl.textContent = product.quote ? `“${product.quote}”` : "";
+    if (headingEl) headingEl.textContent = product.featureHeading || "Core Solution Offerings";
 
-    // Render 4 Feature Check Items
+    // --- Dynamic Bottom Gallery Rendering ---
+    if (galleryRow) {
+        galleryRow.innerHTML = "";
+        const imageList = Array.isArray(product.images) && product.images.length > 0 
+            ? product.images.slice(0, 4) 
+            : [];
+
+        imageList.forEach((imgSrc) => {
+            const col = document.createElement("div");
+            col.className = "col-lg-3 col-md-6 col-sm-6 col-xs-12 image";
+
+            col.innerHTML = `
+                <div class="img-wrapper">
+                    <a href="${imgSrc}" target="_blank" rel="noopener">
+                        <img src="${imgSrc}" class="img-responsive img-fluid w-100" alt="${product.title}" style="height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                    </a>
+                </div>
+            `;
+            galleryRow.appendChild(col);
+        });
+    }
+
+    // --- Render Feature Items ---
     if (featuresContainer && Array.isArray(product.features)) {
         featuresContainer.innerHTML = "";
         product.features.forEach((featureText) => {
@@ -61,7 +87,7 @@ function renderProductDetails(product) {
         });
     }
 
-    // Set Technical Spec Report URL
+    // --- Spec Report Button ---
     if (specBtnEl) {
         if (product.specReportUrl) {
             specBtnEl.setAttribute("href", product.specReportUrl);
@@ -71,9 +97,11 @@ function renderProductDetails(product) {
         }
     }
 
+    // --- Partners / Vendors ---
     if (partnersContainer) {
         partnersContainer.innerHTML = "";
-        (Array.isArray(product.vendors) ? product.vendors : []).forEach((vendor) => {
+        const vendors = Array.isArray(product.vendors) ? product.vendors : [];
+        vendors.forEach((vendor) => {
             const partner = document.createElement("span");
             partner.className = "product-partner-pill";
             partner.textContent = vendor;
@@ -81,7 +109,7 @@ function renderProductDetails(product) {
         });
     }
 
-    // Auto-fill sidebar inquiry form input
+    // --- Sidebar Product Name Auto-Fill ---
     const inquiryInput = document.querySelector('input[name="product_name"]');
     if (inquiryInput) {
         inquiryInput.value = product.title;

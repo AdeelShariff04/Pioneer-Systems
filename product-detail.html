@@ -106,72 +106,34 @@
     <!-- rts project details area start -->
     <div class="rts-project-details-area rts-section-gap">
         <div class="container">
-            <section id="gallery">
+            <section id="gallery" class="rts-section-gap">
                 <div class="container">
                     <div id="image-gallery">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                <div class="img-wrapper">
-                                    <a href="assets/images/project/20.jpg"><img src="assets/images/project/20.jpg"
-                                            class="img-responsive" alt="img"></a>
-                                    <div class="img-overlay">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                <div class="img-wrapper">
-                                    <a href="assets/images/project/21.jpg"><img src="assets/images/project/21.jpg"
-                                            class="img-responsive" alt="img"></a>
-                                    <div class="img-overlay">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                <div class="img-wrapper">
-                                    <a href="assets/images/project/22.jpg"><img src="assets/images/project/22.jpg"
-                                            class="img-responsive" alt="img"></a>
-                                    <div class="img-overlay">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                                <div class="img-wrapper">
-                                    <a href="assets/images/project/23.jpg"><img src="assets/images/project/23.jpg"
-                                            class="img-responsive" alt="img"></a>
-                                    <div class="img-overlay">
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End row -->
-                    </div><!-- End image gallery -->
-                </div><!-- End container -->
+                        <div class="row g-4" id="product-gallery-row">
+                            <!-- 4 Dynamic Project Images Rendered via JS -->
+                        </div>
+                    </div>
+                </div>
             </section>
             <div class="row">
                 <div class="col-lg-8 pr--30">
                     <div class="portfolio-disc-content">
+
                         <!-- Title & Category -->
                         <div class="title-area">
-                            <span id="product-category">AC Power Products</span>
-                            <h4 class="title" id="product-title">Industrial Online UPS &amp; Inverters</h4>
+                            <span id="product-category"></span>
+                            <h4 class="title" id="product-title"></h4>
                         </div>
 
                         <!-- Description Paragraph -->
-                        <p class="disc" id="product-description">
-                            Loading technical overview...
-                        </p>
+                        <p class="disc" id="product-description"></p>
 
                         <!-- Product Quote / Core Value -->
-                        <p class="quote" id="product-quote">
-                            â€œLoading product highlight...â€
-                        </p>
+                        <p class="quote" id="product-quote"></p>
 
                         <!-- Dynamic Technical Capabilities -->
                         <div class="check-area-pd">
-                            <h5 class="title" id="product-features-heading">Key Technical Capabilities</h5>
+                            <h5 class="title" id="product-features-heading"></h5>
                             <div id="product-features-container">
                                 <!-- Injected via JavaScript -->
                             </div>
@@ -185,12 +147,15 @@
                                 <span>Technical Specification Report</span>
                             </a>
                         </div>
+
+                        <!-- Vendor & Technology Partners Box -->
                         <div class="rts-single-wized product-partners-box mt--35" id="product-partners-box">
                             <div class="wized-header">
                                 <h5 class="title">Vendor &amp; Technology Partners</h5>
                             </div>
                             <div class="wized-body">
-                                <div class="product-partners" id="product-partners" aria-label="Vendor and technology partners"></div>
+                                <div class="product-partners" id="product-partners"
+                                    aria-label="Vendor and technology partners"></div>
                             </div>
                         </div>
                     </div>
@@ -209,7 +174,8 @@
                                 </div>
                                 <div class="wized-body mt-4">
                                     <div class="rts-search-wrapper">
-                                        <input class="Email" name="email" type="email" placeholder="Email Address" required>
+                                        <input class="Email" name="email" type="email" placeholder="Email Address"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="wized-body mt-4">
@@ -219,7 +185,8 @@
                                 </div>
                                 <div class="wized-body mt-4">
                                     <div class="rts-search-wrapper">
-                                        <input class="Product" name="product_name" type="text" placeholder="Product Name" readonly required>
+                                        <input class="Product" name="product_name" type="text"
+                                            placeholder="Product Name" readonly required>
                                     </div>
                                 </div>
                                 <button type="submit" class="rts-btn btn-primary w-100 text-center mt-4">
