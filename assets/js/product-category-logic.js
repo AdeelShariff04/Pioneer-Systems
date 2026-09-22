@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchButton = document.getElementById("product-search-button");
 
     if (!productGrid || !categoryList || !searchInput) return;
+    productGrid.innerHTML = "";
 
     fetch("products.json")
         .then((response) => {
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then((productsData) => {
-            const products = Object.values(productsData);
+            const products = Object.values(productsData).filter((product) => product.id === "it-infrastructure");
             const categories = ["All products", ...new Set(products.map((product) => product.category))];
             let selectedCategory = "All products";
 

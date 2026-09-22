@@ -1,249 +1,100 @@
 {
-    "xl-plus": {
-        "id": "xl-plus",
+    "ups-inverter": {
+        "id": "ups-inverter",
         "category": "AC Power Products",
-        "title": "Deutsche Power XL-Plus Online UPS",
-        "description": "The Deutsche Power XL-Plus Series represents an enterprise-grade, true online double-conversion UPS platform designed specifically for mission-critical infrastructure, healthcare imaging systems, and continuous industrial operations. Featuring true input-to-output galvanic isolation and advanced dual-DSP digital control architecture, the system completely separates connected equipment from common-mode electrical noise, line surges, voltage sags, harmonics, and total grid failures. Its rugged transformer topology guarantees that utility transients and neutral floating problems cannot breach the secondary winding, safeguarding sensitive microprocessor circuits and expensive diagnostic hardware. Built to thrive under rigorous load profiles, the XL-Plus incorporates an intelligent three-stage battery charging mechanism that adjusts float and boost voltages according to ambient temperature gradients. This prolonged thermal management prevents plate sulfation and extends storage battery life significantly across regions prone to extreme weather and chronic load-shedding. The system is fully compatible with commercial standby generators, dynamically accommodating wide voltage swings and severe frequency drift without cycling the battery reserve, thereby preserving full autonomy for actual utility blackout events.",
-        "quote": "“Engineered with built-in galvanic isolation and dual-DSP processing to provide unwavering power purity and zero transfer latency for high-value mission-critical infrastructure.”",
+        "title": "UPS & Inverter Solutions",
+        "description": "Pioneer Systems provides dependable AC UPS and inverter solutions for homes, businesses, data rooms, and industrial operations. Our portfolio combines online double-conversion UPS systems, line-interactive backup, and pure sine wave inverters to protect sensitive equipment from outages, surges, voltage instability, and poor power quality.",
+        "quote": "Reliable AC backup and clean power conversion engineered for continuity across residential, commercial, and industrial environments.",
         "featureHeading": "Key Technical Capabilities",
         "features": [
-            "True online double-conversion topology providing continuous zero-millisecond power transfer.",
-            "Built-in heavy-duty galvanic isolation transformer for maximum electrical noise separation and load protection.",
-            "Advanced dual-DSP microprocessor control improving processing speed, precision, and transient response.",
-            "Ultra-wide input voltage (-45% to +25%) and frequency window optimized for standby generator synchronization.",
-            "Three-stage temperature-compensated battery charger engineered to prevent overcharging and cell degradation.",
-            "High short-circuit clearing and overload capacity supporting high inrush currents from inductive machinery.",
-            "Intuitive multi-language LCD interface displaying real-time load analytics, fault diagnostics, and event logs.",
-            "Dual-mains utility input capability paired with an integrated manual maintenance bypass switch."
+            "True online double-conversion UPS systems with zero transfer time for critical loads.",
+            "Pure sine wave inverters compatible with sensitive electronics and modern active PFC power supplies.",
+            "Wide input voltage and frequency windows designed for unstable grids and standby generators.",
+            "Scalable battery configurations for short backup and extended autonomy requirements.",
+            "Advanced overload, short-circuit, surge, and thermal protection for connected equipment.",
+            "LCD and network monitoring options for live load, battery, alarm, and event visibility.",
+            "Static and maintenance bypass options supporting safe servicing without load interruption.",
+            "Commercial and industrial configurations available for single-phase and three-phase applications."
         ],
-        "specReportUrl": "specs/xl-plus-spec-report.pdf"
-    },
-    "elentra": {
-        "id": "elentra",
-        "category": "AC Power Products",
-        "title": "Deutsche Power Elentra UPS Series",
-        "description": "The Deutsche Power Elentra Series is an advanced, high-density online double-conversion UPS engineered specifically for enterprise data racks, corporate telecom rooms, financial branch networks, and edge computing nodes. By incorporating cutting-edge active power factor correction (PFC) circuitry and an output power factor of up to 1.0, the unit provides maximum usable real power in a streamlined, compact footprint. Its transformerless high-frequency design dramatically curtails thermal losses, ensuring minimal heat dissipation within enclosed server rooms while significantly reducing annual HVAC utility expenditures. Beyond its primary double-conversion mode, the Elentra features an intelligent ECO operation state that elevates system efficiency up to 96% under clean grid conditions while sustaining an ultra-fast sub-four-millisecond transfer to inverter if line fluctuations occur. Built with modular internal sub-assemblies, the system simplifies routine servicing, fan replacements, and preventive checks. Network administrators can leverage its comprehensive SNMP/Web management interfaces for scheduled multi-server shutdowns, automated fault alerting via email or SMS, and remote power monitoring across dispersed geographical branches.",
-        "quote": "“High-efficiency enterprise double-conversion architecture delivering unity power factor and up to 96% ECO efficiency for modern server racks and distributed network branches.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "High-frequency double-conversion topology delivering an output power factor up to 1.0 (unity).",
-            "Active input power factor correction achieving PF ≥ 0.99 with input current THDi kept strictly below 3%.",
-            "Intelligent ECO operating mode reaching up to 96% efficiency to minimize corporate operational overhead.",
-            "Extended battery pack scalability with external daisy-chain connectors for prolonged backup requirements.",
-            "Comprehensive emergency power off (EPO) functionality for central building safety interlock compliance.",
-            "Interactive multi-segment LCD control screen providing live runtime estimation and energy flow metrics.",
-            "Advanced smart slot supporting SNMP/HTTP network cards for centralized web-based cluster management.",
-            "Programmable power management outlets allowing prioritized load-shedding of non-essential peripherals."
-        ],
-        "specReportUrl": "specs/elentra-spec-report.pdf"
-    },
-    "elektra-high-frequency": {
-        "id": "elektra-high-frequency",
-        "category": "AC Power Products",
-        "title": "Elektra High-Frequency Online UPS",
-        "description": "The Elektra High-Frequency Series combines advanced three-level IGBT rectifier and inverter technology to deliver clean, quiet, and highly efficient continuous power for contemporary enterprise environments. Specifically tailored for modern telecommunication hubs, broadcasting suites, control rooms, and edge data closets, this series eliminates the bulk and acoustic noise associated with legacy power systems while maximizing efficiency. The high-frequency switching architecture minimizes input current harmonics, preserving upstream distribution components and ensuring full compliance with stringent utility grid power quality standards. Designed for modular scalability, the Elektra allows up to four identical units to operate in active parallel redundancy (N+X) over a shared or centralized bus, providing seamless capacity expansion without downtime. Its sophisticated digital signal processing platform constantly monitors line currents, internal junction temperatures, and phase synchronization, executing microsecond adjustments to suppress utility distortion. Coupled with intelligent multi-mode battery testing, it guarantees total visibility into power conditions, reserve capacities, and system health.",
-        "quote": "“Next-generation three-level IGBT topology and digital signal control maximizing active power density, acoustic silence, and parallel grid redundancy.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Advanced three-level IGBT rectifier and inverter design achieving overall operating efficiency up to 95.5%.",
-            "Full digital signal processing (DSP) control providing sub-millisecond response to severe line variations.",
-            "Near-unity input power factor (0.99) preventing harmonic penalties and reducing upstream cabling requirements.",
-            "Parallel redundancy capability supporting up to 4 units in active N+X configuration without additional hardware.",
-            "Flexible battery configuration allowing adjustable DC-bus voltage to match diverse cell bank installations.",
-            "Cold-start feature enabling full operational startup from battery storage without active utility grid presence.",
-            "Smart fan speed control modulated by internal temperature and load percentage to curtail acoustic noise.",
-            "Integrated static electronic bypass switch alongside a physical wrap-around maintenance bypass circuit."
-        ],
-        "specReportUrl": "specs/elektra-hf-spec-report.pdf"
-    },
-    "elektra-industrial-grade": {
-        "id": "elektra-industrial-grade",
-        "category": "AC Power Products",
-        "title": "Elektra Industrial-Grade Heavy UPS",
-        "description": "Engineered to withstand the demanding conditions of manufacturing plants, oil and gas refineries, steel mills, and heavy processing floors, the Elektra Industrial-Grade UPS represents uncompromising industrial electrical engineering. The system is built around a heavy-duty industrial inverter isolation transformer and rugged magnetic components designed specifically to withstand high inrush currents, regenerative back-EMF, and non-linear motor loads without tripping. Its structural steel cabinet features specialized conformal-coated printed circuit assemblies, modular air filtration grilles, and heavy-duty cooling channels that protect against conductive dust, chemical vapors, and high ambient moisture. Unlike standard commercial UPS platforms, this industrial system integrates dual independent utility mains inputs and isolated bypass pathways to maintain unbroken power distribution even during extreme plant electrical disturbances. Robust thermal dissipation circuits ensure continuous full-load operation in ambient environments reaching up to 50°C. Comprehensive monitoring capabilities enable real-time tracking of transformer temperatures, phase currents, and ground fault status, providing industrial operators with complete operational visibility.",
-        "quote": "“Rugged industrial engineering featuring heavy magnetic output transformers and conformal-coated electronics built for inductive factory machinery and extreme plant environments.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Heavy-duty built-in output isolation transformer designed to absorb high inrush currents and motor feedback.",
-            "Ruggedized steel enclosure with IP-rated ingress protection, dust filtration grilles, and isolated airflow ducts.",
-            "Conformal-coated electronic boards resisting conductive carbon dust, chemical corrosion, and high humidity.",
-            "Continuous full-rated output operation in challenging industrial ambient temperatures up to 50°C.",
-            "Dual-feed utility input architecture accommodating separate rectifier and bypass electrical distribution lines.",
-            "Exceptional short-circuit clearing and overload handling capable of supporting 150% continuous load for 1 minute.",
-            "Comprehensive system protection covering phase reversal, ground faults, over-temperature, and DC-bus overvoltage.",
-            "Industrial SCADA communication support via isolated Modbus RTU/TCP protocols and dry contact relay cards."
-        ],
-        "specReportUrl": "specs/elektra-industrial-spec-report.pdf"
-    },
-    "fuhrer": {
-        "id": "fuhrer",
-        "category": "AC Power Products",
-        "title": "Fuhrer Modular 3-Phase Online UPS",
-        "description": "The Fuhrer Series is a modular three-phase online double-conversion power architecture engineered for tier-standard enterprise data centers, telecom exchanges, and financial processing complexes. Built on a hot-swappable module framework, it allows organizations to scale power capacity dynamically from moderate loads up to multi-megawatt configurations without de-energizing critical hardware. Each power module houses its own decentralized DSP controller, IGBT inverter, rectifier, and dynamic charger, completely eliminating single points of operational failure across the entire framework. This hot-swappable architecture reduces the Mean Time to Repair (MTTR) to under ten minutes, allowing technicians to replace or add modules while the facility remains fully protected. The Fuhrer platform operates with an ultra-high power density that preserves server rack space. Its smart sleep technology automatically deactivates unneeded modules during low-load periods to keep active modules operating at peak efficiency, minimizing energy losses during off-peak hours. A 7-inch color touchscreen interface provides full control over modular load sharing, diagnostic records, and automated battery tests.",
-        "quote": "“Scalable hot-swappable modular architecture eliminating single points of failure while lowering MTTR to under ten minutes for tier-rated enterprise data centers.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Decentralized modular architecture where every hot-swappable module possesses independent DSP controls.",
-            "Zero-downtime hot-swappable maintenance and capacity upgrades while active workloads remain fully powered.",
-            "Smart module cycling (sleep mode) during light load conditions to maintain optimal system efficiency.",
-            "High power density chassis saving up to 40% of facility floor footprint compared to legacy monoblock units.",
-            "Ultra-low Mean Time to Repair (MTTR ≤ 10 mins) through modular plug-and-play field replacement designs.",
-            "Centralized static bypass module with redundant logic circuits safeguarding high-capacity utility transitions.",
-            "Large 7-inch graphical color touchscreen offering granular module metrics, power quality logs, and wave capture.",
-            "Dual-bus synchronization (LBS) support enabling two independent modular UPS systems to operate in lockstep."
-        ],
-        "specReportUrl": "specs/fuhrer-spec-report.pdf"
-    },
-    "dh-series": {
-        "id": "dh-series",
-        "category": "AC Power Products",
-        "title": "Deutsche Power DH-Series Line Interactive UPS",
-        "description": "The Deutsche Power DH-Series is an intelligent, line-interactive UPS engineered to protect commercial workstations, distributed networking hardware, POS terminals, and telecom PBX systems from frequent electrical disturbances. At its core is a multi-step boost and buck automatic voltage regulator (AVR) that continuously stabilizes fluctuating mains lines without drawing down valuable battery storage. This targeted regulation protects internal battery banks from premature aging caused by recurring voltage drops and spikes, ensuring total reserve runtime remains available for genuine utility failures. Delivering a clean pure sine wave output during inverter mode, the DH-Series is fully compatible with modern active power factor corrected (PFC) power supplies found in high-performance workstations and entry-level servers. The unit includes integrated line-filtration stages that absorb lightning surges, line harmonics, and electromagnetic interference. Its intelligent battery management incorporates cold-start capabilities, automated self-tests, and USB/RS-232 communication ports that allow connected systems to save critical documents and perform graceful operating system shutdowns during prolonged outages.",
-        "quote": "“Intelligent line-interactive voltage regulation with pure sine wave delivery, preserving battery storage for true blackouts while protecting sensitive desktop infrastructure.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Multi-step automatic voltage regulation (AVR) compensating for line sags and spikes without battery drain.",
-            "Pure sine wave output in battery mode guaranteeing total compatibility with modern active PFC power supplies.",
-            "Built-in microprocessor controller ensuring reliable, continuous monitoring of utility supply characteristics.",
-            "Cold-start capability allowing the unit to be energized directly from storage batteries without utility mains.",
-            "Integrated high-energy surge protection suppression shielding connected loads from destructive lightning transients.",
-            "USB and RS-232 communication interfaces supporting automated, unattended OS shutdown scripts.",
-            "Audible alarm disable function and intuitive LED/LCD status dashboard displaying real-time power metrics.",
-            "RJ-11/RJ-45 network and data-line transient suppression ports safeguarding modem and LAN infrastructure."
-        ],
-        "specReportUrl": "specs/dh-series-spec-report.pdf"
-    },
-    "solo": {
-        "id": "solo",
-        "category": "AC Power Products",
-        "title": "Solo Compact Commercial Inverter",
-        "description": "The Solo Series is a high-performance, cost-effective pure sine wave power inverter developed to counter frequent, chronic load-shedding across small commercial offices, residential properties, medical clinics, and retail stores. Featuring an ultra-fast transfer mechanism, the Solo prevents workstation reboots, POS resets, and router dropouts during sudden grid outages. Its high-capacity multi-stage battery charger delivers adjustable charging currents, allowing rapid replenishment of deep-cycle tubular and sealed battery banks during short intervals between power cuts. Designed for prolonged daily cycling, the internal transformer and power stages utilize heavy-gauge copper windings and high-grade thermal sinks to prevent derating during continuous operation. The system includes an accessible multi-function LED/LCD display indicating battery state-of-charge, input line stability, and connected load percentages. An integrated low-voltage disconnect circuit prevents deep over-discharge, preserving battery cycle life. The Solo delivers quiet operation, minimal standby power consumption, and reliable performance across everyday residential and small commercial backup applications.",
-        "quote": "“Rugged, cost-effective continuous inverter backup engineered to withstand chronic load-shedding cycles while maximizing deep-cycle battery cycle life.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "High-speed automatic line-to-battery transfer preventing desktop PC resets and network drops.",
-            "Clean pure sine wave AC output suitable for sensitive consumer electronics, office IT, and inductive fan motors.",
-            "Configurable high-current multi-stage battery charger ensuring quick replenishment between power outages.",
-            "Selectable battery chemistry profiles optimized for flat-plate, tubular deep-cycle, and sealed GEL batteries.",
-            "Intelligent low-battery voltage disconnect protecting connected storage cells against destructive over-discharges.",
-            "Overload, output short-circuit, and high-temperature protection with automated recovery sequencing.",
-            "User-friendly front-panel status dashboard displaying line status, battery reserve, and output load bars.",
-            "Low standby self-consumption design maximizing energy efficiency during standby utility monitoring."
-        ],
-        "specReportUrl": "specs/solo-spec-report.pdf"
-    },
-    "vdc-inverter": {
-        "id": "vdc-inverter",
-        "category": "DC Power Products",
-        "title": "Telecom-Grade VDC Pure Inverter",
-        "description": "The Pioneer System Telecom-Grade VDC Inverter series is an industrial-duty power conversion solution engineered to translate DC station battery voltages (24V, 48V, 110V, or 220V DC) into clean, stabilized AC mains electricity. Built specifically for telecommunication transmission sites, cellular towers, railway signaling centers, and power generation switchyards, this inverter operates continuously from existing centralized battery banks. The system incorporates heavy electrical galvanic isolation between the DC bus and the AC output, preventing switching noise, harmonics, and DC ground offsets from contaminating sensitive RF gear or instrumentation circuits. The VDC Series features a high-speed static transfer bypass switch that synchronizes the output with an auxiliary AC utility or generator line, executing sub-four-millisecond transfers should an overload or internal inverter fault occur. Its standard 19-inch rack-mount chassis integrates easily into standard telecom power bays. Digital monitoring systems allow operational crews to review DC input current, output AC parameters, and system alarms remotely via RS-485 Modbus or optional SNMP communication interfaces.",
-        "quote": "“Telecom-standard DC-to-AC power conversion featuring true galvanic bus isolation and rapid static bypass transfer for critical communications and switchyards.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Direct conversion from 24V, 48V, 110V, or 220V DC battery buses to stabilized pure sine wave AC power.",
-            "Full galvanic isolation between DC input and AC output preventing common-mode noise and telecom interference.",
-            "High-speed static transfer bypass switch ensuring uninterrupted load transfers within 4 milliseconds.",
-            "Standard 19-inch rack-mount enclosure compatible with commercial telecommunication power cabinets.",
-            "Ultra-low DC-bus reflected harmonic ripple preventing operational noise on sensitive telecom transmission gear.",
-            "Independent cold-start capability from DC battery banks without relying on external AC auxiliary power.",
-            "Industrial protection suite covering DC reverse polarity, input under/overvoltage, and AC output overload.",
-            "Integrated RS-485 Modbus and dry-contact alarm outputs for SCADA and remote telecom management."
-        ],
-        "specReportUrl": "specs/vdc-inverter-spec-report.pdf"
+        "specReportUrl": "specs/xl-plus-spec-report.pdf",
+        "vendors": ["Deutsche Power"]
     },
     "batteries": {
         "id": "batteries",
         "category": "DC Power Products",
-        "title": "Deep-Cycle Industrial Battery Systems",
-        "description": "Pioneer System supplies, installs, and commissions certified industrial battery banks, including Valve Regulated Lead-Acid (VRLA), Absorbent Glass Mat (AGM), high-performance GEL, and heavy-duty tubular plate OPzV/OPzS stationary cells. Sourced directly from certified global manufacturing partners, these battery systems provide reliable energy storage for industrial UPS systems, solar PV systems, electrical substations, and telecom nodes. Designed with high-purity lead-calcium-tin alloy plates, these cells resist corrosion, reduce internal resistance, and maintain float lifespans ranging from 10 to over 20 years depending on the chosen chemistry. The tubular plate OPzV and OPzS configurations offer exceptional resilience against deep cyclical discharges, making them well-suited for environments with frequent power failures and high ambient temperatures. Each battery bank undergoes factory load testing and compliance checks to confirm rated capacity and discharge curves before shipment. The cells feature flame-retardant ABS cases, low-pressure safety release valves, and insulated copper inter-cell connectors, delivering safe, low-maintenance power storage.",
-        "quote": "“Factory-certified industrial storage cells offering high cyclic endurance, low self-discharge rates, and verified float lifespans for critical infrastructure installations.”",
+        "title": "Industrial Battery Systems",
+        "description": "Pioneer Systems supplies, installs, and commissions certified industrial battery banks, including VRLA, AGM, GEL, and tubular OPzV/OPzS stationary cells. These systems provide reliable energy storage for UPS systems, solar PV installations, electrical substations, and telecom nodes, with configurations selected for standby or deep-cycle service.",
+        "quote": "Factory-certified industrial storage cells offering high cyclic endurance, low self-discharge, and dependable service life for critical infrastructure.",
         "featureHeading": "Key Technical Capabilities",
         "features": [
-            "High-purity lead-calcium-tin alloy grid structures minimizing grid corrosion and fluid electrolysis.",
-            "Broad selection of chemistries including sealed AGM, true nano-silica GEL, and tubular OPzV/OPzS cells.",
-            "Extended operational design lifespan ranging from 10 to over 20 years in stationary standby float service.",
-            "High cyclic discharge endurance built to withstand daily deep discharge profiles in load-shedding zones.",
-            "Low self-discharge rate (less than 2% per month) enabling extended storage intervals without degradation.",
-            "Heavy-duty flame-retardant ABS plastic casing (UL94-V0 rated) with low-pressure safety release valves.",
-            "Fully insulated copper busbars and corrosion-resistant terminal posts reducing connection resistance.",
-            "Certified compliance with international standards including IEC 60896-21/22 and CE manufacturing norms."
+            "High-purity lead-calcium-tin alloy grids minimizing corrosion and fluid electrolysis.",
+            "AGM, GEL, and tubular OPzV/OPzS chemistries for varied standby and cyclic applications.",
+            "Extended design life for stationary float service and frequent deep-discharge environments.",
+            "Low self-discharge rates supporting extended storage without significant capacity loss.",
+            "Flame-retardant casings, safety release valves, insulated connectors, and corrosion-resistant terminals.",
+            "Battery banks engineered for UPS, solar, telecom, and substation installations.",
+            "Factory load testing and compliance checks to confirm rated capacity and discharge curves.",
+            "Installation and commissioning support for complete energy storage deployments."
         ],
-        "specReportUrl": "specs/batteries-spec-report.pdf"
+        "specReportUrl": "specs/batteries-spec-report.pdf",
+        "vendors": ["Deutsche Power"]
     },
-    "solar": {
-        "id": "solar",
-        "category": "PV / Solar Products",
-        "title": "Turnkey Solar PV & Hybrid Inverter Systems",
-        "description": "Pioneer System provides complete engineering, procurement, and construction (EPC) services for turnkey photovoltaic solar systems across residential estates, commercial office buildings, and heavy manufacturing facilities. Combining Tier-1 mono-PERC and bifacial solar modules with smart on-grid, off-grid, and hybrid energy storage inverters, our solutions maximize solar energy harvest while reducing reliance on the commercial power grid. The systems feature multi-MPPT tracking inverters operating above 98.5% efficiency, converting sunlight into usable AC electricity even under low irradiance or high ambient temperatures. Our engineering team oversees the complete lifecycle, from precision shade modeling and structural mounting design to local utility net-metering approvals, allowing clients to export surplus power back to the grid for utility credits. Paired with scalable deep-cycle battery banks, our hybrid configurations provide round-the-clock power security, automatically switching to stored solar energy during grid outages to eliminate fuel consumption from standby generators. Cloud-linked data loggers provide live mobile and desktop tracking of daily energy yields, carbon offsets, and system diagnostics.",
-        "quote": "“Turnkey renewable solar power plants combining Tier-1 bifacial PV modules and hybrid inverters to secure clean power generation, rapid ROI, and net-metering enablement.”",
-        "featureHeading": "Key Technical Capabilities",
+    "it-infrastructure": {
+        "id": "it-infrastructure",
+        "category": "IT Infrastructure",
+        "title": "IT & Infrastructure Solutions",
+        "description": "We provide end-to-end IT and enterprise infrastructure solutions engineered to empower organizations with maximum reliability, high performance, seamless scalability, and robust cybersecurity. Our expertise spans modern data centers, cloud environments, enterprise networking, and intelligence-led protection.",
+        "quote": "Comprehensive technical capabilities and a trusted partner ecosystem for resilient, secure, and scalable enterprise infrastructure.",
+        "featureHeading": "Core Solution Offerings",
         "features": [
-            "Tier-1 high-efficiency monocrystalline PERC and bifacial solar modules providing high power output.",
-            "Advanced multi-MPPT inverters with peak efficiency exceeding 98.5% and wide voltage operating windows.",
-            "Full turnkey net-metering facilitation, managing regulatory approvals, bi-directional metering, and grid tie-in.",
-            "Smart hybrid operating topologies supporting direct self-consumption, battery backup, and grid feed-in.",
-            "Engineered anodized aluminum and galvanized mounting structures rated for high local wind velocities.",
-            "Integrated Type II DC and AC surge arresters along with comprehensive ground-fault isolation protection.",
-            "Integrated cloud data loggers with mobile app monitoring for live generation, load, and battery metrics.",
-            "Substantial reductions in facility carbon emissions coupled with fast capital payback periods (3 to 4 years)."
+            "Cybersecurity and threat protection: network defense, next-generation firewalls, EDR, and unified threat management. Key brands: Fortinet, Sangfor, Trend Micro, Kaspersky.",
+            "Cloud platforms and virtualization: HCI, private and hybrid cloud deployments, virtualization, and enterprise migrations. Key brands: Sangfor Cloud (HCI), Nexa VM, H3C Cloud, Microsoft.",
+            "Enterprise servers and storage: rack and blade servers, SAN/NAS storage, compute clusters, and data center hardware. Key brands: Dell, HPE, H3C, Huawei.",
+            "Networking and wireless infrastructure: enterprise routing, switching, high-density wireless access points, network architecture, and security policies. Key brands: Aruba, H3C, TP-Link, D-Link, HPE, Huawei.",
+            "Surveillance and physical connectivity: IP surveillance, optical fiber networks, structured copper cabling, and physical network topology. Key brands: TP-Link, Corning, D-Link.",
+            "Smart rack and modular data center systems: precision cooling, PDUs, intelligent racks, automated fire suppression, and environmental monitoring. Key brand: Deutsche Power MDC."
         ],
-        "specReportUrl": "specs/solar-spec-report.pdf"
-    },
-    "avr-stablizer": {
-        "id": "avr-stablizer",
-        "category": "AC Power Products",
-        "title": "Industrial Automatic Voltage Regulators (AVR)",
-        "description": "The Pioneer System Industrial Automatic Voltage Regulator (AVR) series delivers precision voltage stabilization engineered to protect sensitive plant equipment from chronic line sags, industrial surges, brownouts, and severe three-phase voltage imbalances. Built around heavy-duty copper variable autotransformers and high-torque servomotors, these regulators deliver a continuous, ripple-free output maintained within a tight ±1% tolerance of the nominal voltage. Because the electromechanical servo mechanism operates without introducing harmonic distortion or waveform chopping, it is ideal for precision CNC tooling, high-speed printing presses, textile looms, automated packaging lines, and hospital MRI/CT suites. In three-phase configurations, each phase is monitored and corrected independently by its own digital controller and servo assembly, ensuring balanced output voltages even when utility input phases are heavily skewed. The system is protected by a multi-stage monitoring circuit that guards against over-voltage, under-voltage, phase failure, and thermal overload. An integrated manual bypass switch enables scheduled servicing without requiring plant shutdown.",
-        "quote": "“High-precision servo-controlled voltage stabilization delivering steady output within ±1% accuracy without harmonic distortion across unstable electrical grids.”",
-        "featureHeading": "Key Technical Capabilities",
-        "features": [
-            "Precision servo-motor electromechanical regulation holding output voltage within a tight ±1% tolerance.",
-            "True pure sinusoidal output without waveform clipping, distortion, or electrical harmonic feedback.",
-            "Independent three-phase regulation automatically correcting unbalanced line voltages and non-uniform loads.",
-            "Heavy-duty pure copper variable autotransformers built to withstand high continuous current throughput.",
-            "Wide utility input stabilization window accommodating chronic voltage swings (-30% to +25%).",
-            "Automatic protective disconnect for sustained over-voltage, under-voltage, phase reversal, and phase failure.",
-            "Built-in heavy-duty manual maintenance bypass switch allowing safe servicing without load interruption.",
-            "Digital LED/LCD control panel displaying input/output voltages, operating currents, and fault status."
-        ],
-        "specReportUrl": "specs/avr-stablizer-spec-report.pdf"
+        "specReportUrl": "specs/it-infrastructure-spec-report.pdf",
+        "vendors": ["Dell", "HPE", "HP", "H3C", "TP-Link", "Corning", "D-Link", "Nexa VM", "Fortinet", "Sangfor", "Trend Micro", "Kaspersky", "Huawei", "Microsoft", "Deutsche Power"]
     },
     "led-lights": {
         "id": "led-lights",
         "category": "AC / DC Products",
-        "title": "Commercial & Industrial LED / SMD Luminaires",
-        "description": "Pioneer System offers commercial and industrial-grade LED and surface-mount device (SMD) lighting luminaires designed to replace legacy high-pressure sodium, metal halide, and fluorescent fixtures. By integrating high-lumen SMD LED arrays with constant-current drivers, these fixtures reduce facility lighting electrical draw by up to 80% while delivering clear, uniform illumination. The fixtures are constructed from die-cast aluminum with integrated cooling fins that draw heat away from the LED junctions, ensuring rated operational lifespans exceeding 50,000 hours with minimal lumen depreciation. Designed for industrial manufacturing plants, commercial storage warehouses, logistics hubs, and corporate offices, they deliver high Color Rendering Index (CRI > 80) metrics and flicker-free illumination that improves worker safety and visual comfort. The internal driver includes heavy-duty surge suppression up to 6kV, protecting luminaires against utility surges, switching spikes, and lightning transients. Available in wide flood, high-bay, and perimeter configurations, our lighting fixtures simplify maintenance and reduce operational costs across large commercial footprints.",
-        "quote": "“Industrial-grade high-lumen SMD luminaires lowering lighting electrical consumption by up to 80% while delivering flicker-free, long-life illumination.”",
+        "title": "Commercial & Industrial LED Lighting",
+        "description": "Pioneer Systems offers commercial and industrial LED and SMD luminaires designed to replace legacy fixtures. High-lumen LED arrays, constant-current drivers, thermal management, and surge protection deliver efficient, uniform illumination for manufacturing plants, warehouses, logistics hubs, and offices.",
+        "quote": "Industrial-grade LED luminaires lowering lighting consumption while delivering flicker-free, long-life illumination.",
         "featureHeading": "Key Technical Capabilities",
         "features": [
-            "High luminous efficacy delivering between 120 and 150 lumens per watt to maximize energy conservation.",
-            "Heavy-duty die-cast aluminum heat-sink casings providing effective thermal dissipation for LED chips.",
-            "Rated operational lifespan exceeding 50,000 continuous hours with low lumen degradation over time.",
-            "Robust constant-current LED drivers with integrated surge protection (rated from 4kV up to 6kV).",
-            "High Color Rendering Index (CRI ≥ 80) ensuring accurate color fidelity and improved workspace visibility.",
-            "Flicker-free electronic ballasting preventing eye fatigue and compatible with manufacturing machine shops.",
-            "IP65/IP66 ingress protection rating with impact-resistant tempered glass lenses for harsh plant floors.",
-            "Direct retrofitting compatibility for commercial high-bay, floodlight, and modular grid fixtures."
+            "High luminous efficacy for lower facility lighting energy consumption.",
+            "Die-cast aluminum heat sinks for effective LED thermal management.",
+            "Long operating life with low lumen depreciation over time.",
+            "Constant-current drivers with integrated surge protection.",
+            "High CRI output for accurate color and improved workspace visibility.",
+            "Flicker-free operation for visual comfort and production environments.",
+            "IP-rated housings and impact-resistant lenses for demanding locations.",
+            "Retrofitting options for high-bay, floodlight, and modular grid fixtures."
         ],
-        "specReportUrl": "specs/led-lights-spec-report.pdf"
+        "specReportUrl": "specs/led-lights-specs.pdf",
+        "vendors": ["Deutsche Power"]
     },
-    "dc-rechargable-fans": {
-        "id": "dc-rechargable-fans",
-        "category": "AC / DC Products",
-        "title": "Dual-Mode AC/DC Rechargeable Fans",
-        "description": "Our dual-mode AC/DC rechargeable fans are engineered to provide dependable cooling across commercial offices, educational facilities, and residences facing frequent power interruptions. Built around high-efficiency Brushless DC (BLDC) motor technology, these fans consume between 30W and 45W—less than half the power required by conventional AC induction ceiling fans. The fans feature an intelligent auto-switching power supply that runs directly from standard AC utility mains while trickle-charging the internal or external battery storage. When a blackout occurs, the unit transitions immediately to DC battery or direct solar power without slowing or stopping, providing uninterrupted airflow. Aerodynamically balanced, high-grade blades optimize air delivery (CFM) while keeping motor operation quiet. The internal control electronics include safeguards against overcharging, deep battery discharge, and thermal runaway, extending the life of connected storage cells. Designed for versatile use, these fans can be powered by standard AC grid lines, 12V DC storage batteries, or small photovoltaic panels, providing cost-effective cooling for areas with unreliable power.",
-        "quote": "“Energy-efficient BLDC motor fans reducing power draw by over 60% with seamless automatic transition between utility AC, storage batteries, and direct solar power.”",
+    "solar": {
+        "id": "solar",
+        "category": "PV / Solar Products",
+        "title": "Turnkey Solar PV & Hybrid Systems",
+        "description": "Pioneer Systems provides complete engineering, procurement, and construction services for turnkey photovoltaic solar systems across residential, commercial, and industrial sites. We combine Tier-1 PV modules with on-grid, off-grid, and hybrid inverters, scalable storage, monitoring, and net-metering support.",
+        "quote": "Turnkey renewable power systems combining efficient PV generation, hybrid storage, and practical energy independence.",
         "featureHeading": "Key Technical Capabilities",
         "features": [
-            "Ultra-low-power Brushless DC (BLDC) motor consuming only 30W to 45W at maximum operating speed.",
-            "Dual-input smart power supply operating smoothly on 220V AC mains and 12V DC battery/solar inputs.",
-            "Zero-latency automatic transfer to DC battery power when utility power fails, preventing airflow interruption.",
-            "Built-in multi-stage smart charger with overcharge and deep-discharge protection circuitry.",
-            "Aerodynamically balanced blade design providing high air delivery (CFM) with low motor noise.",
-            "Multi-speed digital adjustment paired with optional wireless RF remote control and timer settings.",
-            "Rugged copper-wound motor design built for continuous operation in high-temperature environments.",
-            "Direct compatibility with decentralized rooftop 12V solar panels for off-grid operations."
+            "Tier-1 monocrystalline and bifacial modules for high energy yield.",
+            "Multi-MPPT inverters with high conversion efficiency and wide operating windows.",
+            "Turnkey net-metering facilitation, utility approvals, and grid tie-in support.",
+            "Hybrid topologies supporting self-consumption, battery backup, and grid feed-in.",
+            "Engineered mounting structures designed for local wind and site conditions.",
+            "DC and AC surge protection with ground-fault isolation.",
+            "Cloud monitoring for generation, load, battery, and system diagnostics.",
+            "System sizing and lifecycle support focused on reliable returns and lower emissions."
         ],
-        "specReportUrl": "specs/dc-rechargable-fans-spec-report.pdf"
+        "specReportUrl": "specs/solar-spec-report.pdf",
+        "vendors": ["Deutsche Power"]
     }
 }

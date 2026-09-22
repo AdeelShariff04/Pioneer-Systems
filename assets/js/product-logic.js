@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Extract ?product=slug from URL
     const urlParams = new URLSearchParams(window.location.search);
-    const productKey = urlParams.get("product") || "xl-plus"; // Default fallback
+    const productKey = urlParams.get("product") || "ups-inverter"; // Default fallback
 
     const inquiryForm = document.getElementById("product-inquiry-form");
     if (inquiryForm) {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then((productsData) => {
-            const product = productsData[productKey] || productsData["xl-plus"];
+            const product = productsData[productKey] || productsData["ups-inverter"];
             renderProductDetails(product);
         })
         .catch((error) => {
@@ -39,6 +39,7 @@ function renderProductDetails(product) {
     const headingEl = document.getElementById("product-features-heading");
     const featuresContainer = document.getElementById("product-features-container");
     const specBtnEl = document.getElementById("product-spec-btn");
+    const partnersContainer = document.getElementById("product-partners");
 
     if (categoryEl) categoryEl.textContent = product.category;
     if (titleEl) titleEl.textContent = product.title;
@@ -68,6 +69,16 @@ function renderProductDetails(product) {
         } else {
             specBtnEl.style.display = "none";
         }
+    }
+
+    if (partnersContainer) {
+        partnersContainer.innerHTML = "";
+        (Array.isArray(product.vendors) ? product.vendors : []).forEach((vendor) => {
+            const partner = document.createElement("span");
+            partner.className = "product-partner-pill";
+            partner.textContent = vendor;
+            partnersContainer.appendChild(partner);
+        });
     }
 
     // Auto-fill sidebar inquiry form input
