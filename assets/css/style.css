@@ -23158,6 +23158,7 @@ p {
   border-color: var(--color-primary);
   box-shadow: 0 10px 25px rgba(31, 31, 37, 0.08);
   transform: translateY(-5px);
+  background: #EBF4FC;
 }
 
 .client-brands-message {
