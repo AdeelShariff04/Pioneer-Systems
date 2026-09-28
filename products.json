@@ -4,52 +4,252 @@
     "category": "AC Power Products",
     "title": "UPS & Inverter Solutions",
     "images": [
-      "assets/images/products/ups-inverter/01.jpg",
-      "assets/images/products/ups-inverter/02.jpg",
-      "assets/images/products/ups-inverter/03.jpg",
-      "assets/images/products/ups-inverter/04.jpg"
+      "assets/images/products/ups/1.png",
+      "assets/images/products/ups/2.png",
+      "assets/images/products/ups/3.png",
+      "assets/images/products/ups/4.png"
     ],
-    "description": "Pioneer Systems provides dependable AC UPS and inverter solutions for homes, businesses, data rooms, and industrial operations. Our portfolio combines online double-conversion UPS systems, line-interactive backup, and pure sine wave inverters to protect sensitive equipment from outages, surges, voltage instability, and poor power quality.",
-    "quote": "Reliable AC backup and clean power conversion engineered for continuity across residential, commercial, and industrial environments.",
-    "featureHeading": "Key Technical Capabilities",
+    "description": "Pioneer Systems delivers comprehensive emergency power backup and power conditioning solutions ranging from 500VA compact units up to 3.2MVA enterprise-scale facilities. Engineered to protect mission-critical operations against blackouts, sags, harmonic distortion, and voltage spikes, our portfolio spans high-efficiency offline units, true double-conversion systems, modular hot-swappable architectures, and ruggedized outdoor solutions.",
+    "quote": "Engineered power continuity delivering near-instantaneous emergency transition, precision voltage regulation, and zero-downtime reliability across all operating tiers.",
+    "featureHeading": "Featured Product Range",
     "features": [
-      "True online double-conversion UPS systems with zero transfer time for critical loads.",
-      "Pure sine wave inverters compatible with sensitive electronics and modern active PFC power supplies.",
-      "Wide input voltage and frequency windows designed for unstable grids and standby generators.",
-      "Scalable battery configurations for short backup and extended autonomy requirements.",
-      "Advanced overload, short-circuit, surge, and thermal protection for connected equipment.",
-      "LCD and network monitoring options for live load, battery, alarm, and event visibility.",
-      "Static and maintenance bypass options supporting safe servicing without load interruption.",
-      "Commercial and industrial configurations available for single-phase and three-phase applications."
+      "<strong>Offline (Standby) UPS Systems:</strong> Simple and high-efficiency backup power units designed for desktop PCs, office workstations, point-of-sale machines, and small network switches where brief battery runtime allows orderly shutdown during power loss.",
+      "<strong>Online Double-Conversion UPS:</strong> Premium AC/DC/AC conversion systems delivering continuous, zero-transfer-time power conditioning and total utility isolation for mission-critical IT racks, medical treatment machinery, and corporate server environments.",
+      "<strong>Single-Phase Modular UPS (230V):</strong> Flexible, hot-swappable rack-mount and tower systems designed for small server rooms, branch hubs, and distributed network closets requiring easy module addition and rapid onsite maintenance.",
+      "<strong>Three-Phase Modular UPS (400V):</strong> Enterprise-grade scalable power platforms engineered with N+X parallel redundancy and decentralized control logic to safeguard large-scale corporate data centers, hospital wings, and financial trading facilities.",
+      "<strong>Enterprise IT-Grade UPS:</strong> High-reliability rack-mount systems tailored specifically for dense server cabinets, high-throughput network nodes, and cloud computing environments demanding clean sine wave delivery and SNMP monitoring.",
+      "<strong>Industrial-Grade High-Capacity UPS:</strong> Heavy-duty three-phase power platforms equipped with integrated galvanic isolation transformers, robust steel enclosures, and high fault-clearing capabilities for manufacturing lines, chemical plants, and refineries.",
+      "<strong>Rugged Weatherproof Outdoor UPS:</strong> Resilient outdoor power enclosures rated IP65/IP66 with thermostatically controlled active ventilation, sun shields, and internal insulation built for roadside traffic controllers, CCTV nodes, and remote telecom towers.",
+      "<strong>Telecom & Edge Micro-UPS:</strong> Compact DC-integrated and AC-backup battery systems designed for distributed edge networks, cellular base transceiver stations (BTS), and remote broadband fiber nodes running in isolated installations."
     ],
     "specReportUrl": "specs/xl-plus-spec-report.pdf",
-    "vendors": ["Deutsche Power"]
+    "vendors": [
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
+    ]
+  },
+  "avr": {
+    "id": "avr",
+    "category": "AC Power Products",
+    "title": "Automatic Voltage Regulators (AVR)",
+    "images": [
+      "assets/images/products/avr/1.png",
+      "assets/images/products/avr/2.png",
+      "assets/images/products/avr/3.png",
+      "assets/images/products/avr/4.png"
+    ],
+    "description": "Pioneer Systems delivers high-precision Automatic Voltage Regulators engineered to actively monitor input utility swings and stabilize voltage levels within tight threshold limits. By protecting motorized loads, sensitive lab instruments, and industrial plants from chronic under-voltage brownouts and destructive over-voltage spikes, our AVR systems ensure steady equipment performance and reduced electrical wear.",
+    "quote": "Active voltage stabilization maintaining precise electrical tolerances, eliminating grid voltage fluctuations, and safeguarding mission-critical assets.",
+    "featureHeading": "Key Technical Characteristics",
+    "features": [
+      "<strong>Active Dynamic Voltage Regulation:</strong> Continuously measures incoming utility levels and makes instant automatic adjustments to keep output voltage steady within strict target tolerances.",
+      "<strong>Comprehensive Brownout & Over-Voltage Protection:</strong> Shields critical electronics and industrial loads from sustained low voltages, brownout drops, and harmful high-voltage surges.",
+      "<strong>Tight Output Voltage Stabilization:</strong> Delivers balanced electrical power across connected loads, preventing equipment stress and premature circuit failure from unstable utility feeds.",
+      "<strong>Continuous Real-Time Grid Monitoring:</strong> Tracks incoming power variations in real time to trigger immediate corrective tap or servo adjustments without interrupting connected operations.",
+      "<strong>Sustained Operational Consistency:</strong> Keeps machinery, commercial appliances, and sensitive electronics running reliably through chronic peak-hour voltage drops and fluctuating utility supplies.",
+      "<strong>Automated Over-Load & Fault Cutoff:</strong> Incorporates built-in protective trip mechanisms to disconnect output during severe grid faults or extreme electrical spikes for equipment safety.",
+      "<strong>High-Efficiency Energy-Smart Design:</strong> Engineered for minimal internal loss and low heat dissipation during continuous duty across residential, corporate, and light industrial facilities.",
+      "<strong>Generator & Utility Supply Compatibility:</strong> Operates seamlessly with fluctuating mains power and standby generators to provide smooth, reliable output across wide input windows."
+    ],
+    "specReportUrl": "specs/avr-spec-report.pdf",
+    "vendors": [
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
+    ]
+  },
+  "line-conditioner": {
+    "id": "line-conditioner",
+    "category": "DC Power Products",
+    "title": "Power Line Conditioners",
+    "images": [
+      "assets/images/products/series/1.png",
+      "assets/images/products/series/2.png",
+      "assets/images/products/series/3.png",
+      "assets/images/products/series/4.png"
+    ],
+    "description": "Pioneer Systems supplies advanced power line conditioners engineered to clean, filter, and isolate contaminated utility power before it reaches sensitive electronic equipment. Combining high-attenuation common-mode noise filters, transient surge suppressors, and galvanic isolation transformers, our units remove high-frequency electromagnetic interference, voltage notches, and ground loops that cause digital errors and hardware breakdown.",
+    "quote": "Advanced electrical wave purification suppressing line noise, mitigating transients, and shielding sensitive electronics with pure galvanic isolation.",
+    "featureHeading": "Key Technical Characteristics",
+    "features": [
+      "<strong>High-Attenuation Electrical Noise Filtering:</strong> Eliminates electromagnetic interference (EMI) and radio-frequency noise (RFI) to provide smooth, clean electrical sine waves to sensitive devices.",
+      "<strong>Smoothing of Minor Voltage Fluctuations:</strong> Corrects brief voltage sags and momentary line swells, ensuring downstream equipment receives stable power quality without disruption.",
+      "<strong>Transient Surge & Spike Attenuation:</strong> Built-in multi-stage suppression networks absorb high-energy transients and voltage spikes caused by heavy machinery switching or external grid events.",
+      "<strong>Clean Waveform Delivery for Sensitive Gear:</strong> Prevents logic processing errors, audio/video distortion, and premature degradation in sensitive digital controllers, audio suites, and lab tools.",
+      "<strong>Harmonic & Distortion Suppression:</strong> Smooths distorted waveforms and utility line irregularities, creating a dependable electrical foundation for critical IT and precision electronics.",
+      "<strong>Isolated Ground & Interference Shielding:</strong> Prevents ground-loop hum and common-mode electrical noise between utility distribution systems and sensitive connected loads.",
+      "<strong>Maintenance-Free Passive Wave Purification:</strong> Solid-state continuous line-scrubbing architecture that operates quietly and reliably without mechanical wear, friction, or moving components.",
+      "<strong>Seamless Integration with Downstream Hardware:</strong> Serves as an ideal clean-power buffer between raw utility supplies and sensitive microprocessors, laboratory devices, and server hardware."
+    ],
+    "specReportUrl": "specs/line-conditioner-spec-report.pdf",
+    "vendors": [
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
+    ]
   },
   "batteries": {
     "id": "batteries",
     "category": "DC Power Products",
-    "title": "Industrial Battery Systems",
+    "title": "Industrial AGM & VRLA Batteries",
     "images": [
-      "assets/images/products/batteries/01.jpg",
-      "assets/images/products/batteries/02.jpg",
-      "assets/images/products/batteries/03.jpg",
-      "assets/images/products/batteries/04.jpg"
+      "assets/images/products/batteries/1.png",
+      "assets/images/products/batteries/2.png",
+      "assets/images/products/batteries/3.png",
+      "assets/images/products/batteries/4.png"
     ],
-    "description": "Pioneer Systems supplies, installs, and commissions certified industrial battery banks, including VRLA, AGM, GEL, and tubular OPzV/OPzS stationary cells. These systems provide reliable energy storage for UPS systems, solar PV installations, electrical substations, and telecom nodes, with configurations selected for standby or deep-cycle service.",
-    "quote": "Factory-certified industrial storage cells offering high cyclic endurance, low self-discharge, and dependable service life for critical infrastructure.",
-    "featureHeading": "Key Technical Capabilities",
+    "description": "Pioneer Systems supplies, installs, and commissions certified industrial Valve-Regulated Lead-Acid (VRLA) and Absorbent Glass Mat (AGM) battery banks. Engineered with high-purity lead-calcium-tin alloys and micro-porous glass separators that absorb all electrolyte, these sealed cells deliver dependable high-rate discharge performance and safe, spill-proof operation across standby UPS, substation, and commercial backup environments.",
+    "quote": "Maintenance-free, spill-proof stationary storage engineered for high-rate discharge efficiency and reliable float backup across industrial facilities.",
+    "featureHeading": "Key Technical Characteristics",
     "features": [
-      "High-purity lead-calcium-tin alloy grids minimizing corrosion and fluid electrolysis.",
-      "AGM, GEL, and tubular OPzV/OPzS chemistries for varied standby and cyclic applications.",
-      "Extended design life for stationary float service and frequent deep-discharge environments.",
-      "Low self-discharge rates supporting extended storage without significant capacity loss.",
-      "Flame-retardant casings, safety release valves, insulated connectors, and corrosion-resistant terminals.",
-      "Battery banks engineered for UPS, solar, telecom, and substation installations.",
-      "Factory load testing and compliance checks to confirm rated capacity and discharge curves.",
-      "Installation and commissioning support for complete energy storage deployments."
+      "<strong>Spill-Proof Absorbed Glass Mat Construction:</strong> Completely sealed design where acid electrolyte is fully absorbed into micro-fiberglass separators, preventing fluid leaks and enabling vertical or horizontal mounting.",
+      "<strong>Maintenance-Free Recombinant Gas Chemistry:</strong> Internal oxygen recombination efficiency exceeding 99% that eliminates the need for periodic distilled water top-ups and reduces toxic acid mist emissions.",
+      "<strong>Corrosion-Resistant Lead-Calcium-Tin Alloy Grids:</strong> High-purity cast grid plates engineered to retard positive plate grid growth, minimize self-discharge rates, and maintain structural integrity over years of float service.",
+      "<strong>Flame-Retardant ABS Enclosure Compounds:</strong> Heavy-duty, impact-resistant battery casings manufactured from UL94-V0 rated plastic resin to withstand seismic stresses and external thermal hazards.",
+      "<strong>Self-Regulating Low-Pressure Safety Relief Valves:</strong> One-way rubber pressure release valves that vent excessive internal gas buildup during abnormal overcharge conditions and automatically reseal to prevent air entry.",
+      "<strong>Low Internal Resistance (IR) for High-Rate Discharge:</strong> Compact cell architecture delivering low impedance, enabling the battery to supply intense current bursts required by short-duration, high-KVA UPS systems.",
+      "<strong>Extended Stationary Float Design Life:</strong> Chemically balanced active material formulation providing an engineered float operating life of 10 to 12 years under standard temperature-controlled data room conditions.",
+      "<strong>Wide Temperature Float & Storage Resilience:</strong> Formulated active lead paste and dense plate compression that deliver dependable cold-start current and controlled float charging in ambient environments from -15°C to 50°C."
     ],
     "specReportUrl": "specs/batteries-spec-report.pdf",
-    "vendors": ["Deutsche Power"]
+    "vendors": [
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
+    ]
+  },
+  "lifepo4": {
+    "id": "lifepo4",
+    "category": "DC Power Products",
+    "title": "Lithium Iron Phosphate (LiFePO4) Storage",
+    "images": [
+      "assets/images/products/lifepo4/1.png",
+      "assets/images/products/lifepo4/2.png",
+      "assets/images/products/lifepo4/3.png",
+      "assets/images/products/lifepo4/4.png"
+    ],
+    "description": "Pioneer Systems delivers next-generation Lithium Iron Phosphate (LiFePO4) energy storage systems engineered for applications requiring high energy density, rapid charging, and long cycle life. With intrinsic chemical stability against thermal runaway, built-in intelligent Battery Management Systems (BMS), and significant footprint and weight reductions compared to traditional lead-acid systems, our LiFePO4 solutions power advanced telecom sites, solar setups, and data rooms.",
+    "quote": "Next-generation lithium storage offering exceptional cycle endurance, fast charging, and built-in BMS protection for demanding standby and cyclic duties.",
+    "featureHeading": "Key Technical Characteristics",
+    "features": [
+      "<strong>Superior Chemical & Thermal Runaway Safety:</strong> Non-combustible olivine crystal molecular structure that resists thermal breakdown, oxygen release, and self-ignition under extreme heat or mechanical puncture.",
+      "<strong>Deep Cyclic Endurance (4000+ Cycles):</strong> Delivers more than 4,000 to 6,000 full charge-discharge cycles at 80% Depth of Discharge (DoD), outlasting conventional lead-acid batteries by more than four times.",
+      "<strong>Rapid High-Current Charge Acceptance:</strong> Supports 1C fast charging rates, allowing fully depleted battery banks to regain 90% capacity within 60 to 90 minutes without accelerating internal degradation.",
+      "<strong>Integrated Smart Battery Management System (BMS):</strong> Dedicated micro-controller boards providing automatic cell voltage balancing, over-charge, over-discharge, short-circuit, and multi-point temperature safety cutoffs.",
+      "<strong>High Usable Energy Density & Compact Footprint:</strong> Provides up to 70% reduction in weight and a 50% decrease in physical volume compared to equivalent-capacity VRLA battery banks, saving floor space.",
+      "<strong>Flat Voltage Discharge Profile:</strong> Sustains near-constant terminal voltage output above 12.8V/51.2V across the entire discharge curve until fully depleted, maximizing attached inverter conversion efficiency.",
+      "<strong>Zero Memory Effect & Deep Discharge Recovery:</strong> Allows flexible partial-state-of-charge (PSoC) operation without permanent capacity fading or plate sulfation common to legacy lead-acid systems.",
+      "<strong>Digital Telemetry & Remote Communication:</strong> Built-in RS485, CANbus, and SNMP digital communication ports that provide direct data handshakes with modern hybrid solar inverters and DC rectifiers."
+    ],
+    "specReportUrl": "specs/lifepo4-spec-report.pdf",
+    "vendors": [
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
+    ]
+  },
+  "opzv-opzs": {
+    "id": "opzv-opzs",
+    "category": "DC Power Products",
+    "title": "Tubular OPzV & OPzS Stationary Cells",
+    "images": [
+      "assets/images/products/opz/1.png",
+      "assets/images/products/opz/2.png",
+      "assets/images/products/opz/3.png",
+      "assets/images/products/opz/4.png"
+    ],
+    "description": "Pioneer Systems supplies certified heavy-duty tubular OPzV (sealed gel) and OPzS (flooded electrolyte) 2V stationary storage cells. Manufactured with positive tubular gauntlet plates that prevent active mass shedding during deep discharge, these robust cells provide 15 to 20 years of design service life across electrical utility substations, renewable energy microgrids, telecom infrastructure, and industrial plants.",
+    "quote": "Heavy-duty 2V tubular storage cells delivering deep-discharge endurance and extended service life for critical utility infrastructure.",
+    "featureHeading": "Featured Product Range",
+    "features": [
+      "<strong>OPzS Flooded Tubular 2V Cells:</strong> Heavy-duty transparent container cells featuring low-antimony tubular plates and liquid electrolyte, built for utility switchgear, power stations, and extended-backup UPS systems.",
+      "<strong>OPzV Maintenance-Free Gel 2V Cells:</strong> Sealed valve-regulated tubular cells containing thixotropic silica gel electrolyte that eliminates acid stratification and avoids fluid maintenance in remote telecom and solar installations.",
+      "<strong>Tubular Positive Plate Gauntlet Technology:</strong> Woven polyester gauntlet sleeves that securely encase active positive material, preventing plate shedding and mossing under repetitive deep-cycling stress.",
+      "<strong>Transparent SAN Container Housings:</strong> Impact-resistant Styrene Acrylonitrile (SAN) transparent casing on OPzS models allowing visual inspection of internal plates and electrolyte levels without opening cells.",
+      "<strong>Deep-Discharge Recovery (DIN 40736 / 40742):</strong> Fully compliant with international DIN standards, supporting deep discharges down to 1.80V per cell with rapid capacity recovery and zero permanent loss.",
+      "<strong>20-Year Float Design Life:</strong> Thick tubular spine castings and dense active material matrices engineered to deliver 18 to 20 years of continuous float service life at 20°C in utility substation rooms.",
+      "<strong>High-Integrity Leak-Proof Terminal Bushings:</strong> Precision sliding pole bushings with brass female inserts that absorb mechanical post expansion while preventing electrolyte creep and terminal corrosion.",
+      "<strong>Ceramic Flame-Arrestor Vent Plugs:</strong> Specialized ceramic filter plugs on OPzS cells that prevent external sparks from entering while allowing internal hydrogen and oxygen gases to vent safely."
+    ],
+    "specReportUrl": "specs/opzv-opzs-spec-report.pdf",
+    "vendors": [
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
+    ]
   },
   "it-infrastructure": {
     "id": "it-infrastructure",
@@ -65,70 +265,32 @@
     "quote": "Comprehensive technical capabilities and a trusted partner ecosystem for resilient, secure, and scalable enterprise infrastructure.",
     "featureHeading": "Core Solution Offerings",
     "features": [
-      "<strong>Next-Gen Cybersecurity & Threat Defense:</strong> Unified network firewalls, proactive endpoint detection (EDR), and zero-trust perimeter defense.",
-      "<strong>Hybrid Cloud & Virtualization (HCI):</strong> Scalable hyper-converged infrastructure, private cloud deployments, and zero-downtime workload migrations.",
-      "<strong>Enterprise Compute & SAN/NAS Storage:</strong> High-density rack/blade servers and fault-tolerant storage clusters engineered for mission-critical data.",
-      "<strong>Enterprise Routing, Switching & Wi-Fi:</strong> High-throughput core network architecture, managed Layer-3 switching, and high-density wireless coverage.",
-      "<strong>Structured Cabling & IP Surveillance:</strong> High-speed fiber backbones, certified Cat6/6A copper infrastructure, and AI-enabled HD IP monitoring.",
-      "<strong>Modular Data Centers & Smart Racks:</strong> Turnkey micro-data centers integrated with in-row precision cooling, intelligent PDUs, and environmental telemetry."
+      "<strong>Next-Gen Cybersecurity & Threat Defense:</strong> Multi-layered perimeter defense incorporating unified threat management (UTM), AI-driven endpoint detection and response (EDR), next-generation firewalls, and zero-trust network access policies.",
+      "<strong>Hybrid Cloud & Virtualization (HCI):</strong> High-density hyper-converged infrastructure platforms enabling seamless hybrid-cloud integration, private cloud cluster deployments, containerized workloads, and zero-downtime virtual machine migrations.",
+      "<strong>Enterprise Compute & Cluster Platforms:</strong> Scalable, high-density rack and blade server architectures optimized for compute-intensive virtualization hosts, artificial intelligence workloads, and mission-critical database processing.",
+      "<strong>Centralized SAN & NAS Storage Arrays:</strong> High-throughput, flash-accelerated enterprise storage area networks featuring automated data tiering, synchronous replication, high-availability failover, and disaster recovery architectures.",
+      "<strong>Core Enterprise Routing & Switching:</strong> Carrier-grade backbone routing platforms and intelligent Layer-3 distribution switching fabrics engineered for high-throughput, low-latency packet delivery across corporate campus networks.",
+      "<strong>High-Density Enterprise Wi-Fi Deployments:</strong> Next-generation indoor and outdoor wireless access points (APs) equipped with automated beamforming, zero-handoff client roaming, guest management, and centralized security telemetry.",
+      "<strong>Certified Structured Cabling & Fiber Backbones:</strong> High-bandwidth single-mode and multi-mode optical fiber backbones combined with certified Cat6/Cat6A copper structured cabling topologies for resilient physical communication.",
+      "<strong>Modular Micro Data Centers & Smart Racks:</strong> Turnkey modular data center (MDC) enclosures integrating in-row precision cooling units, intelligent monitored PDUs, automated clean-agent fire suppression, and environmental telemetry."
     ],
     "specReportUrl": "specs/it-infrastructure-spec-report.pdf",
     "vendors": [
-      "Dell", "HPE", "HP", "H3C", "TP-Link", "Corning", "D-Link", 
-      "Nexa VM", "Fortinet", "Sangfor", "Trend Micro", "Kaspersky", 
-      "Huawei", "Microsoft", "Deutsche Power"
+      "Dell",
+      "HPE",
+      "HP",
+      "H3C",
+      "TP-Link",
+      "Corning",
+      "D-Link",
+      "Nexa VM",
+      "Fortinet",
+      "Sangfor",
+      "Trend Micro",
+      "Kaspersky",
+      "Huawei",
+      "Microsoft",
+      "Deutsche Power"
     ]
-  },
-  "led-lights": {
-    "id": "led-lights",
-    "category": "AC / DC Products",
-    "title": "Commercial & Industrial LED Lighting",
-    "images": [
-      "assets/images/products/led-lights/01.jpg",
-      "assets/images/products/led-lights/02.jpg",
-      "assets/images/products/led-lights/03.jpg",
-      "assets/images/products/led-lights/04.jpg"
-    ],
-    "description": "Pioneer Systems offers commercial and industrial LED and SMD luminaires designed to replace legacy fixtures. High-lumen LED arrays, constant-current drivers, thermal management, and surge protection deliver efficient, uniform illumination for manufacturing plants, warehouses, logistics hubs, and offices.",
-    "quote": "Industrial-grade LED luminaires lowering lighting consumption while delivering flicker-free, long-life illumination.",
-    "featureHeading": "Key Technical Capabilities",
-    "features": [
-      "High luminous efficacy for lower facility lighting energy consumption.",
-      "Die-cast aluminum heat sinks for effective LED thermal management.",
-      "Long operating life with low lumen depreciation over time.",
-      "Constant-current drivers with integrated surge protection.",
-      "High CRI output for accurate color and improved workspace visibility.",
-      "Flicker-free operation for visual comfort and production environments.",
-      "IP-rated housings and impact-resistant lenses for demanding locations.",
-      "Retrofitting options for high-bay, floodlight, and modular grid fixtures."
-    ],
-    "specReportUrl": "specs/led-lights-specs.pdf",
-    "vendors": ["Deutsche Power"]
-  },
-  "solar": {
-    "id": "solar",
-    "category": "PV / Solar Products",
-    "title": "Turnkey Solar PV & Hybrid Systems",
-    "images": [
-      "assets/images/products/solar/01.jpg",
-      "assets/images/products/solar/02.jpg",
-      "assets/images/products/solar/03.jpg",
-      "assets/images/products/solar/04.jpg"
-    ],
-    "description": "Pioneer Systems provides complete engineering, procurement, and construction services for turnkey photovoltaic solar systems across residential, commercial, and industrial sites. We combine Tier-1 PV modules with on-grid, off-grid, and hybrid inverters, scalable storage, monitoring, and net-metering support.",
-    "quote": "Turnkey renewable power systems combining efficient PV generation, hybrid storage, and practical energy independence.",
-    "featureHeading": "Key Technical Capabilities",
-    "features": [
-      "Tier-1 monocrystalline and bifacial modules for high energy yield.",
-      "Multi-MPPT inverters with high conversion efficiency and wide operating windows.",
-      "Turnkey net-metering facilitation, utility approvals, and grid tie-in support.",
-      "Hybrid topologies supporting self-consumption, battery backup, and grid feed-in.",
-      "Engineered mounting structures designed for local wind and site conditions.",
-      "DC and AC surge protection with ground-fault isolation.",
-      "Cloud monitoring for generation, load, battery, and system diagnostics.",
-      "System sizing and lifecycle support focused on reliable returns and lower emissions."
-    ],
-    "specReportUrl": "specs/solar-spec-report.pdf",
-    "vendors": ["Deutsche Power"]
   }
 }
