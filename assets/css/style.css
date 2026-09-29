@@ -673,7 +673,8 @@ ol ul {
   }
 }
 .rts-section-gapBottom {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -13433,7 +13434,6 @@ nav ul li a {
 }
 .banner-main-wrapper-one p.disc {
   margin-bottom: 30px;
-  margin-bottom: 40px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -13790,7 +13790,7 @@ nav ul li a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 825px;
+  height: 590px;
 }
 
 .banner-two-main-wrapper-solaric.two {
@@ -13829,10 +13829,13 @@ nav ul li a {
   margin-top: 25px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .banner-solari-2-content .banner-title {
     font-size: 44px;
     line-height: 55px;
+  }
+  .hero-content {
+    display: none;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -13840,12 +13843,15 @@ nav ul li a {
     font-size: 36px;
     line-height: 45px;
   }
+  .hero-content {
+    display: none;
+  }
 }
 .banner-solari-2-content p.disc {
-  margin-top: 25px;
+  margin-top: 50px;
   color: #FFFFFF;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
 }
 
@@ -13917,6 +13923,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: flex-end;
 }
 
 .button-solari-banner-area .vedio-icone .video-play-button {
@@ -15556,7 +15563,7 @@ nav ul li a {
   display: block;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(217, 217, 217, 0.267);
+  -webkit-text-stroke-color: rgba(217, 217, 217, 0.6);
   font-size: 100px;
   font-weight: 700;
   font-weight: 700;
@@ -25266,6 +25273,7 @@ p {
 
 .rts-client-review-area-h2 {
   position: relative;
+  background: #EBF4FC;
   z-index: 10;
 }
 
@@ -25743,6 +25751,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: var(--color-primary); */
 }
 
 @media only screen and (max-width: 767px) {
