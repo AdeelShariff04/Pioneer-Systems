@@ -22,7 +22,7 @@
       "<strong>Rugged Weatherproof Outdoor UPS:</strong> Resilient outdoor power enclosures rated IP65/IP66 with thermostatically controlled active ventilation, sun shields, and internal insulation built for roadside traffic controllers, CCTV nodes, and remote telecom towers.",
       "<strong>Telecom & Edge Micro-UPS:</strong> Compact DC-integrated and AC-backup battery systems designed for distributed edge networks, cellular base transceiver stations (BTS), and remote broadband fiber nodes running in isolated installations."
     ],
-    "specReportUrl": "specs/xl-plus-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",
@@ -64,7 +64,7 @@
       "<strong>High-Efficiency Energy-Smart Design:</strong> Engineered for minimal internal loss and low heat dissipation during continuous duty across residential, corporate, and light industrial facilities.",
       "<strong>Generator & Utility Supply Compatibility:</strong> Operates seamlessly with fluctuating mains power and standby generators to provide smooth, reliable output across wide input windows."
     ],
-    "specReportUrl": "specs/avr-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",
@@ -106,7 +106,7 @@
       "<strong>Maintenance-Free Passive Wave Purification:</strong> Solid-state continuous line-scrubbing architecture that operates quietly and reliably without mechanical wear, friction, or moving components.",
       "<strong>Seamless Integration with Downstream Hardware:</strong> Serves as an ideal clean-power buffer between raw utility supplies and sensitive microprocessors, laboratory devices, and server hardware."
     ],
-    "specReportUrl": "specs/line-conditioner-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",
@@ -148,7 +148,7 @@
       "<strong>Extended Stationary Float Design Life:</strong> Chemically balanced active material formulation providing an engineered float operating life of 10 to 12 years under standard temperature-controlled data room conditions.",
       "<strong>Wide Temperature Float & Storage Resilience:</strong> Formulated active lead paste and dense plate compression that deliver dependable cold-start current and controlled float charging in ambient environments from -15°C to 50°C."
     ],
-    "specReportUrl": "specs/batteries-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",
@@ -190,7 +190,7 @@
       "<strong>Zero Memory Effect & Deep Discharge Recovery:</strong> Allows flexible partial-state-of-charge (PSoC) operation without permanent capacity fading or plate sulfation common to legacy lead-acid systems.",
       "<strong>Digital Telemetry & Remote Communication:</strong> Built-in RS485, CANbus, and SNMP digital communication ports that provide direct data handshakes with modern hybrid solar inverters and DC rectifiers."
     ],
-    "specReportUrl": "specs/lifepo4-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",
@@ -232,7 +232,7 @@
       "<strong>High-Integrity Leak-Proof Terminal Bushings:</strong> Precision sliding pole bushings with brass female inserts that absorb mechanical post expansion while preventing electrolyte creep and terminal corrosion.",
       "<strong>Ceramic Flame-Arrestor Vent Plugs:</strong> Specialized ceramic filter plugs on OPzS cells that prevent external sparks from entering while allowing internal hydrogen and oxygen gases to vent safely."
     ],
-    "specReportUrl": "specs/opzv-opzs-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",
@@ -274,7 +274,7 @@
       "<strong>Certified Structured Cabling & Fiber Backbones:</strong> High-bandwidth single-mode and multi-mode optical fiber backbones combined with certified Cat6/Cat6A copper structured cabling topologies for resilient physical communication.",
       "<strong>Modular Micro Data Centers & Smart Racks:</strong> Turnkey modular data center (MDC) enclosures integrating in-row precision cooling units, intelligent monitored PDUs, automated clean-agent fire suppression, and environmental telemetry."
     ],
-    "specReportUrl": "specs/it-infrastructure-spec-report.pdf",
+    "specReportUrl": "assets/CP.pdf",
     "vendors": [
       "Dell",
       "HPE",

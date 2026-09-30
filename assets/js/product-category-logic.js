@@ -17,9 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }).filter(Boolean);
 
     const categories = ["All products", ...new Set(rawCategories)];
-    let selectedCategory = "All products";
 
-    // Filter cards based on search input and active category
+    // 1. Read URL query param ?category=... (with fallback to "All products")
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryParam = urlParams.get("category");
+
+    let selectedCategory = "All products";
+    if (categoryParam) {
+        // Case-insensitive match against extracted categories
+        const matched = categories.find(
+            (c) => c.toLowerCase() === categoryParam.toLowerCase().trim()
+        );
+        if (matched) {
+            selectedCategory = matched;
+        }
+    }
+
+    // 2. Filter cards based on search input and active category
     const filterProducts = () => {
         const query = searchInput ? searchInput.value.trim().toLowerCase() : "";
         let visibleCount = 0;
@@ -31,7 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const cardCategory = categoryElem ? categoryElem.textContent.trim() : "";
             const cardTitle = titleElem ? titleElem.textContent.trim().toLowerCase() : "";
 
-            const matchesCategory = selectedCategory === "All products" || cardCategory === selectedCategory;
+            const matchesCategory =
+                selectedCategory === "All products" || cardCategory === selectedCategory;
             const matchesSearch = !query || cardTitle.includes(query);
 
             if (matchesCategory && matchesSearch) {
@@ -58,10 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Render Category Sidebar Tabs
+    // 3. Render Category Sidebar Tabs
     if (categoryList) {
         categoryList.innerHTML = "";
-        categories.forEach((category, index) => {
+        categories.forEach((category) => {
+            const isInitialActive = category === selectedCategory;
+
             const list = document.createElement("ul");
             list.className = "single-categories";
             const item = document.createElement("li");
@@ -69,12 +86,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
             link.href = "#";
             link.innerHTML = `${category} <i class="far fa-long-arrow-right"></i>`;
-            link.className = index === 0 ? "active" : "";
-            link.setAttribute("aria-pressed", String(index === 0));
+            link.className = isInitialActive ? "active" : "";
+            link.setAttribute("aria-pressed", String(isInitialActive));
 
             link.addEventListener("click", (event) => {
                 event.preventDefault();
                 selectedCategory = category;
+
+                // Sync URL without triggering a full page reload
+                const newUrl = new URL(window.location);
+                if (category === "All products") {
+                    newUrl.searchParams.delete("category");
+                } else {
+                    newUrl.searchParams.set("category", category);
+                }
+                window.history.replaceState({}, "", newUrl);
 
                 categoryList.querySelectorAll("a").forEach((catLink) => {
                     catLink.classList.remove("active");
@@ -92,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Attach search events
+    // 4. Attach search events
     if (searchInput) {
         searchInput.addEventListener("input", filterProducts);
     }
@@ -102,4 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             filterProducts();
         });
     }
+
+    // 5. Initial filter run matching URL category selection
+    filterProducts();
 });

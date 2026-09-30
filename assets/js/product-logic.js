@@ -65,7 +65,7 @@ function renderProductDetails(product) {
             col.innerHTML = `
                 <div class="img-wrapper">
                     <a href="${imgSrc}" target="_blank" rel="noopener">
-                        <img src="${imgSrc}" class="img-responsive img-fluid w-100" alt="${product.title}" style="height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <img src="${imgSrc}" class="img-responsive img-fluid w-100" alt="${product.title}" style="object-fit: cover; display: block; border-radius: 10px;">
                     </a>
                 </div>
             `;
