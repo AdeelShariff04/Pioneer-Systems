@@ -41,70 +41,28 @@
       "Deutsche Power"
     ]
   },
-  "avr": {
-    "id": "avr",
+  "avr-line-conditioner": {
+    "id": "avr-line-conditioner",
     "category": "AC Power Products",
-    "title": "Automatic Voltage Regulators (AVR)",
+    "title": "AVR & Power Line Conditioners",
     "images": [
       "assets/images/products/avr/1.png",
       "assets/images/products/avr/2.png",
       "assets/images/products/avr/3.png",
       "assets/images/products/avr/4.png"
     ],
-    "description": "Pioneer Systems delivers high-precision Automatic Voltage Regulators engineered to actively monitor input utility swings and stabilize voltage levels within tight threshold limits. By protecting motorized loads, sensitive lab instruments, and industrial plants from chronic under-voltage brownouts and destructive over-voltage spikes, our AVR systems ensure steady equipment performance and reduced electrical wear.",
-    "quote": "Active voltage stabilization maintaining precise electrical tolerances, eliminating grid voltage fluctuations, and safeguarding mission-critical assets.",
+    "description": "Pioneer Systems delivers comprehensive voltage regulation and power-conditioning solutions engineered to stabilize fluctuating grid supplies and purify electrical waveforms. Combining active Automatic Voltage Regulation (AVR) with advanced multi-stage line filtering, this system continuously corrects under-voltage brownouts and over-voltage surges while eliminating high-frequency noise, harmonic distortion, and transient spikes to safeguard critical electronics.",
+    "quote": "Precision voltage stabilization and waveform purification engineered to eliminate utility anomalies and protect mission-critical equipment.",
     "featureHeading": "Key Technical Characteristics",
     "features": [
       "<strong>Active Dynamic Voltage Regulation:</strong> Continuously measures incoming utility levels and makes instant automatic adjustments to keep output voltage steady within strict target tolerances.",
       "<strong>Comprehensive Brownout & Over-Voltage Protection:</strong> Shields critical electronics and industrial loads from sustained low voltages, brownout drops, and harmful high-voltage surges.",
       "<strong>Tight Output Voltage Stabilization:</strong> Delivers balanced electrical power across connected loads, preventing equipment stress and premature circuit failure from unstable utility feeds.",
-      "<strong>Continuous Real-Time Grid Monitoring:</strong> Tracks incoming power variations in real time to trigger immediate corrective tap or servo adjustments without interrupting connected operations.",
-      "<strong>Sustained Operational Consistency:</strong> Keeps machinery, commercial appliances, and sensitive electronics running reliably through chronic peak-hour voltage drops and fluctuating utility supplies.",
-      "<strong>Automated Over-Load & Fault Cutoff:</strong> Incorporates built-in protective trip mechanisms to disconnect output during severe grid faults or extreme electrical spikes for equipment safety.",
-      "<strong>High-Efficiency Energy-Smart Design:</strong> Engineered for minimal internal loss and low heat dissipation during continuous duty across residential, corporate, and light industrial facilities.",
-      "<strong>Generator & Utility Supply Compatibility:</strong> Operates seamlessly with fluctuating mains power and standby generators to provide smooth, reliable output across wide input windows."
-    ],
-    "specReportUrl": "assets/CP.pdf",
-    "vendors": [
-      "Dell",
-      "HPE",
-      "HP",
-      "H3C",
-      "TP-Link",
-      "Corning",
-      "D-Link",
-      "Nexa VM",
-      "Fortinet",
-      "Sangfor",
-      "Trend Micro",
-      "Kaspersky",
-      "Huawei",
-      "Microsoft",
-      "Deutsche Power"
-    ]
-  },
-  "line-conditioner": {
-    "id": "line-conditioner",
-    "category": "DC Power Products",
-    "title": "Power Line Conditioners",
-    "images": [
-      "assets/images/products/series/1.png",
-      "assets/images/products/series/2.png",
-      "assets/images/products/series/3.png",
-      "assets/images/products/series/4.png"
-    ],
-    "description": "Pioneer Systems supplies advanced power line conditioners engineered to clean, filter, and isolate contaminated utility power before it reaches sensitive electronic equipment. Combining high-attenuation common-mode noise filters, transient surge suppressors, and galvanic isolation transformers, our units remove high-frequency electromagnetic interference, voltage notches, and ground loops that cause digital errors and hardware breakdown.",
-    "quote": "Advanced electrical wave purification suppressing line noise, mitigating transients, and shielding sensitive electronics with pure galvanic isolation.",
-    "featureHeading": "Key Technical Characteristics",
-    "features": [
+      "<strong>Continuous Real-Time Grid Monitoring:</strong> Tracks incoming power variations in real time to trigger immediate corrective adjustments without interrupting connected operations.",
       "<strong>High-Attenuation Electrical Noise Filtering:</strong> Eliminates electromagnetic interference (EMI) and radio-frequency noise (RFI) to provide smooth, clean electrical sine waves to sensitive devices.",
       "<strong>Smoothing of Minor Voltage Fluctuations:</strong> Corrects brief voltage sags and momentary line swells, ensuring downstream equipment receives stable power quality without disruption.",
       "<strong>Transient Surge & Spike Attenuation:</strong> Built-in multi-stage suppression networks absorb high-energy transients and voltage spikes caused by heavy machinery switching or external grid events.",
-      "<strong>Clean Waveform Delivery for Sensitive Gear:</strong> Prevents logic processing errors, audio/video distortion, and premature degradation in sensitive digital controllers, audio suites, and lab tools.",
-      "<strong>Harmonic & Distortion Suppression:</strong> Smooths distorted waveforms and utility line irregularities, creating a dependable electrical foundation for critical IT and precision electronics.",
-      "<strong>Isolated Ground & Interference Shielding:</strong> Prevents ground-loop hum and common-mode electrical noise between utility distribution systems and sensitive connected loads.",
-      "<strong>Maintenance-Free Passive Wave Purification:</strong> Solid-state continuous line-scrubbing architecture that operates quietly and reliably without mechanical wear, friction, or moving components.",
-      "<strong>Seamless Integration with Downstream Hardware:</strong> Serves as an ideal clean-power buffer between raw utility supplies and sensitive microprocessors, laboratory devices, and server hardware."
+      "<strong>Clean Waveform Delivery for Sensitive Gear:</strong> Prevents logic processing errors, audio/video distortion, and premature degradation in sensitive digital controllers, audio suites, and lab tools."
     ],
     "specReportUrl": "assets/CP.pdf",
     "vendors": [

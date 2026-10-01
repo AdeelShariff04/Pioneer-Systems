@@ -3,13 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const productKey = urlParams.get("product") || "ups-inverter";
 
-    const inquiryForm = document.getElementById("product-inquiry-form");
-    if (inquiryForm) {
-        inquiryForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-        });
-    }
-
     // 2. Fetch products data
     fetch("products.json")
         .then((response) => {
