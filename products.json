@@ -23,6 +23,12 @@
       "<strong>Telecom & Edge Micro-UPS:</strong> Compact DC-integrated and AC-backup battery systems designed for distributed edge networks, cellular base transceiver stations (BTS), and remote broadband fiber nodes running in isolated installations."
     ],
     "specReportUrl": "assets/CP.pdf",
+    "partners": [
+      {
+        "name": "Deutsche Power",
+        "logo": "assets/images/logo/logo-01.svg"
+      }
+    ],
     "vendors": [
       "Dell",
       "HPE",
@@ -65,6 +71,12 @@
       "<strong>Clean Waveform Delivery for Sensitive Gear:</strong> Prevents logic processing errors, audio/video distortion, and premature degradation in sensitive digital controllers, audio suites, and lab tools."
     ],
     "specReportUrl": "assets/CP.pdf",
+    "partners": [
+      {
+        "name": "Titan",
+        "logo": "assets/images/logo/logo-01.svg"
+      }
+    ],
     "vendors": [
       "Dell",
       "HPE",
@@ -107,6 +119,16 @@
       "<strong>Wide Temperature Float & Storage Resilience:</strong> Formulated active lead paste and dense plate compression that deliver dependable cold-start current and controlled float charging in ambient environments from -15°C to 50°C."
     ],
     "specReportUrl": "assets/CP.pdf",
+    "partners": [
+      {
+        "name": "Deutsche Power",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Excide",
+        "logo": "assets/images/logo/logo-01.svg"
+      }
+    ],
     "vendors": [
       "Dell",
       "HPE",
@@ -149,6 +171,16 @@
       "<strong>Digital Telemetry & Remote Communication:</strong> Built-in RS485, CANbus, and SNMP digital communication ports that provide direct data handshakes with modern hybrid solar inverters and DC rectifiers."
     ],
     "specReportUrl": "assets/CP.pdf",
+    "partners": [
+      {
+        "name": "Deutsche Power",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Excide",
+        "logo": "assets/images/logo/logo-01.svg"
+      }
+    ],
     "vendors": [
       "Dell",
       "HPE",
@@ -191,6 +223,7 @@
       "<strong>Ceramic Flame-Arrestor Vent Plugs:</strong> Specialized ceramic filter plugs on OPzS cells that prevent external sparks from entering while allowing internal hydrogen and oxygen gases to vent safely."
     ],
     "specReportUrl": "assets/CP.pdf",
+    "partners": [],
     "vendors": [
       "Dell",
       "HPE",
@@ -233,6 +266,64 @@
       "<strong>Modular Micro Data Centers & Smart Racks:</strong> Turnkey modular data center (MDC) enclosures integrating in-row precision cooling units, intelligent monitored PDUs, automated clean-agent fire suppression, and environmental telemetry."
     ],
     "specReportUrl": "assets/CP.pdf",
+    "partners": [
+      {
+        "name": "Attom",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Cohesity",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Corning",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Dell",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Fortinet",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Huawei",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Lenovo",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "TP Link",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Trend Micro",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Veem",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Sangfor",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Nexa",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "Kaspersky",
+        "logo": "assets/images/logo/logo-01.svg"
+      },
+      {
+        "name": "H3C",
+        "logo": "assets/images/logo/logo-01.svg"
+      }
+    ],
     "vendors": [
       "Dell",
       "HPE",

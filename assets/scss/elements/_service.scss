@@ -960,7 +960,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 0%;
         transition: .3s;
         z-index: -1;
         border-radius: 10px;
@@ -978,21 +978,53 @@
     }
     &:hover{
         &::after{
-            height: 0%;
+            height: 100%;
+        }
+        .icon-area{
+            svg{
+                filter: none;
+            }
         }
         .icon-area{
             svg{
                 path{
-                    fill: #FFFFFF;
+                    fill: #005CB9;
                 }
             }
         }
         .title{
-            color: #FFFFFF;
+            color: #000000;
         }  
         p.disc{
-            color: #FFFFFF;
+            color: #003B75;
         } 
+    }
+    .icon-area{
+        margin-bottom: 26px;
+        svg{
+            transition: .3s;
+        }
+        svg{
+            path{
+                transition: .3s;
+            }
+        }
+    }
+    .title{
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        font-size: 20px;
+        transition: .3s;
+        color: #FFFFFF;
+        max-width: max-content;
+        &:hover{
+            color: var(--color-primary);
+        }
+    }
+    p.disc{
+        margin-bottom: 0;
+        color: #FFFFFF;
+        transition: .3s;
     }
     .icon-area{
         margin-bottom: 26px;

@@ -18423,11 +18423,12 @@ p {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 0%;
   transition: 0.3s;
   z-index: -1;
   border-radius: 10px;
 }
+
 .single-service-solari::before {
   position: absolute;
   left: 0;
@@ -18439,39 +18440,56 @@ p {
   border-radius: 10px;
   z-index: -1;
 }
+
 .single-service-solari:hover::after {
-  height: 0%;
+  height: 100%;
 }
+
+.single-service-solari:hover .icon-area svg {
+  filter: none;
+}
+
 .single-service-solari:hover .icon-area svg path {
-  fill: #FFFFFF;
+  fill: #005CB9;
 }
+
 .single-service-solari:hover .title {
-  color: #FFFFFF;
+  color: #000000;
 }
+
 .single-service-solari:hover p.disc {
-  color: #FFFFFF;
+  color: #003B75;
 }
+
 .single-service-solari .icon-area {
   margin-bottom: 26px;
 }
+
+.single-service-solari .icon-area svg {
+  transition: 0.3s;
+}
+
 .single-service-solari .icon-area svg path {
   transition: 0.3s;
 }
+
 .single-service-solari .title {
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 20px;
   transition: 0.3s;
-  color: #000000;
+  color: #FFFFFF;
   max-width: -moz-max-content;
   max-width: max-content;
 }
+
 .single-service-solari .title:hover {
   color: var(--color-primary);
 }
+
 .single-service-solari p.disc {
   margin-bottom: 0;
-  color: #003B75;
+  color: #FFFFFF;
   transition: 0.3s;
 }
 

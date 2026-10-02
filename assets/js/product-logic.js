@@ -34,7 +34,6 @@ function renderProductDetails(product) {
     const headingEl = document.getElementById("product-features-heading");
     const featuresContainer = document.getElementById("product-features-container");
     const specBtnEl = document.getElementById("product-spec-btn");
-    const partnersContainer = document.getElementById("product-partners");
     const galleryRow = document.getElementById("product-gallery-row");
 
     // Populate Headings & Text
@@ -90,21 +89,66 @@ function renderProductDetails(product) {
         }
     }
 
-    // --- Partners / Vendors ---
-    if (partnersContainer) {
-        partnersContainer.innerHTML = "";
-        const vendors = Array.isArray(product.vendors) ? product.vendors : [];
-        vendors.forEach((vendor) => {
-            const partner = document.createElement("span");
-            partner.className = "product-partner-pill";
-            partner.textContent = vendor;
-            partnersContainer.appendChild(partner);
-        });
-    }
+    renderProductPartners(product.partners);
 
     // --- Sidebar Product Name Auto-Fill ---
     const inquiryInput = document.querySelector('input[name="product_name"]');
     if (inquiryInput) {
         inquiryInput.value = product.title;
+    }
+}
+
+function renderProductPartners(partners) {
+    const slider = document.querySelector(".mySwiper-category-soalr");
+    const sliderWrapper = document.getElementById("product-partners-slider");
+    if (!slider || !sliderWrapper) return;
+
+    const shuffledPartners = Array.isArray(partners) ? [...partners] : [];
+    for (let index = shuffledPartners.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [shuffledPartners[index], shuffledPartners[randomIndex]] =
+            [shuffledPartners[randomIndex], shuffledPartners[index]];
+    }
+
+    sliderWrapper.replaceChildren();
+    shuffledPartners.slice(0, 5).forEach((partner) => {
+        if (!partner || typeof partner.name !== "string" || typeof partner.logo !== "string"
+            || !partner.name.trim() || !partner.logo.trim()) return;
+
+        const slide = document.createElement("div");
+        slide.className = "swiper-slide";
+
+        const card = document.createElement("div");
+        card.className = "single-category";
+
+        const thumbnail = document.createElement("div");
+        thumbnail.className = "thumbnail";
+
+        const logo = document.createElement("img");
+        logo.src = partner.logo;
+        logo.alt = partner.name;
+        logo.loading = "lazy";
+        thumbnail.appendChild(logo);
+
+        const nameContainer = document.createElement("div");
+        nameContainer.className = "single-category";
+        const name = document.createElement("h5");
+        name.className = "title";
+        name.textContent = partner.name;
+        nameContainer.appendChild(name);
+
+        card.append(thumbnail, nameContainer);
+        slide.appendChild(card);
+        sliderWrapper.appendChild(slide);
+    });
+
+    const swiper = slider.swiper;
+    if (swiper) {
+        if (swiper.params.loop) swiper.loopDestroy();
+        swiper.update();
+        if (swiper.params.loop) {
+            swiper.loopCreate();
+            swiper.update();
+        }
     }
 }
