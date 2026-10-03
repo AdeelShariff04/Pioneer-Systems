@@ -103,15 +103,9 @@ function renderProductPartners(partners) {
     const sliderWrapper = document.getElementById("product-partners-slider");
     if (!slider || !sliderWrapper) return;
 
-    const shuffledPartners = Array.isArray(partners) ? [...partners] : [];
-    for (let index = shuffledPartners.length - 1; index > 0; index -= 1) {
-        const randomIndex = Math.floor(Math.random() * (index + 1));
-        [shuffledPartners[index], shuffledPartners[randomIndex]] =
-            [shuffledPartners[randomIndex], shuffledPartners[index]];
-    }
-
     sliderWrapper.replaceChildren();
-    shuffledPartners.slice(0, 5).forEach((partner) => {
+    const partnerList = Array.isArray(partners) ? partners : [];
+    partnerList.forEach((partner) => {
         if (!partner || typeof partner.name !== "string" || typeof partner.logo !== "string"
             || !partner.name.trim() || !partner.logo.trim()) return;
 
@@ -144,11 +138,6 @@ function renderProductPartners(partners) {
 
     const swiper = slider.swiper;
     if (swiper) {
-        if (swiper.params.loop) swiper.loopDestroy();
         swiper.update();
-        if (swiper.params.loop) {
-            swiper.loopCreate();
-            swiper.update();
-        }
     }
 }

@@ -586,11 +586,10 @@
             invert: true,
             releaseOnEdges: true
           },
-          loop: true,
+          loop: false,
           autoplay: {
             delay: 3000,
           },
-          loopFillGroupWithBlank: false,
           pagination: {
             el: ".swiper-pagination",
             type: "progressbar",
