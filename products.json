@@ -26,7 +26,7 @@
     "partners": [
       {
         "name": "Deutsche Power",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/dp.png"
       }
     ],
     "vendors": [
@@ -74,7 +74,7 @@
     "partners": [
       {
         "name": "Titan",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/titan.png"
       }
     ],
     "vendors": [
@@ -122,11 +122,11 @@
     "partners": [
       {
         "name": "Deutsche Power",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/dp.png"
       },
       {
         "name": "Excide",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/exide.png"
       }
     ],
     "vendors": [
@@ -174,11 +174,11 @@
     "partners": [
       {
         "name": "Deutsche Power",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/dp.png"
       },
       {
         "name": "Excide",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/exide.png"
       }
     ],
     "vendors": [
@@ -269,59 +269,59 @@
     "partners": [
       {
         "name": "Attom",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/attom.png"
       },
       {
         "name": "Cohesity",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/cohesity.png"
       },
       {
         "name": "Corning",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/corning.png"
       },
       {
         "name": "Dell",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/dell.png"
       },
       {
         "name": "Fortinet",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/fortinet.png"
       },
       {
         "name": "Huawei",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/huawei.png"
       },
       {
         "name": "Lenovo",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/lenovo.png"
       },
       {
         "name": "TP Link",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/tplink.png"
       },
       {
         "name": "Trend Micro",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/trendmicro.png"
       },
       {
         "name": "Veem",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/veem.png"
       },
       {
         "name": "Sangfor",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/sangfor.png"
       },
       {
         "name": "Nexa",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/nexavm.png"
       },
       {
         "name": "Kaspersky",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/kaspersky.png"
       },
       {
         "name": "H3C",
-        "logo": "assets/images/logo/logo-01.svg"
+        "logo": "assets/images/partners/h3c.png"
       }
     ],
     "vendors": [
