@@ -16017,6 +16017,73 @@ nav ul li a {
   margin-top: 25px;
 }
 
+.partner-right {
+  background-color: #EBF4FC;
+  height: 70px;
+  border-radius: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  padding: 5px 0;
+  border: 1px solid var(--color-primary);
+}
+
+.partner-section-label {
+  font-family: var(--font-primary);
+  display: flex;
+  flex: 0 0 110px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  border-radius: 30px 0 0 30px;
+  background: #EBF4FC;
+  color: var(--color-primary);
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.partner-logo-track {
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  will-change: transform;
+}
+
+.partner-logo-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  height: 70px;
+  align-items: center;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-out;
+}
+
+.partner-logo-row.is-active {
+  opacity: 1;
+}
+
+.partner-logo {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  overflow: hidden;
+}
+
+.partner-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 35px;
+  object-fit: contain;
+  transition: opacity 0.15s ease;
+}
+
+
 @media only screen and (max-width: 768px) {
   .banner-solari-2-content .banner-title {
     font-size: 44px;
@@ -16040,11 +16107,12 @@ nav ul li a {
 }
 
 .banner-solari-2-content p.disc {
-  margin-top: 50px;
+  margin-top: 40px;
   color: #FFFFFF;
   font-weight: 500;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 
 .header-two-solari.header-top {
