@@ -247,10 +247,10 @@
     "category": "IT Infrastructure",
     "title": "IT & Infrastructure Solutions",
     "images": [
-      "assets/images/products/it/1.png",
-      "assets/images/products/it/2.png",
-      "assets/images/products/it/3.png",
-      "assets/images/products/it/4.png"
+      "assets/images/products/it/it-1.png",
+      "assets/images/products/it/it-2.png",
+      "assets/images/products/it/it-3.png",
+      "assets/images/products/it/it-4.png"
     ],
     "description": "We provide end-to-end IT and enterprise infrastructure solutions engineered to empower organizations with maximum reliability, high performance, seamless scalability, and robust cybersecurity. Our expertise spans modern data centers, cloud environments, enterprise networking, and intelligence-led protection.",
     "quote": "Comprehensive technical capabilities and a trusted partner ecosystem for resilient, secure, and scalable enterprise infrastructure.",

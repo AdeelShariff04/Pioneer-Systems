@@ -611,8 +611,15 @@
 .img-wrapper {
   position: relative;
   margin-top: 15px;
+  border: 2px solid #005CB9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 1px rgba(0, 92, 185, 0.12);
   img {
     width: 100%;
+    display: block;
+    border-radius: 10px;
   }
 }
 
