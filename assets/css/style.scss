@@ -27893,17 +27893,13 @@ p {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .brand-area-h2 {
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .brand-area-h2 {
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
     }
 }
 
