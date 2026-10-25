@@ -31927,6 +31927,49 @@ edit .quantity-edit button {
     color: var(--color-primary-2);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .product-category-layout > .container > .row.g-5 > .col-xl-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .product-category-layout > .container > .row.g-5 > .col-xl-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .product-category-layout > .container > .row.g-5 > .col-xl-4,
+    .product-category-layout > .container > .row.g-5 > .col-xl-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .product-category-layout .Categories #product-category-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .product-category-layout .Categories .single-categories {
+        margin: 0;
+    }
+
+    .product-category-layout .Categories .single-categories li a {
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .product-category-layout .Categories .single-categories li a i {
+        display: none;
+    }
+
+    .product-category-layout #product-grid > [class*="col-"] {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
 /*# sourceMappingURL=style.css.map */
-
-
