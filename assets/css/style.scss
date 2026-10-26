@@ -1,4 +1,4 @@
-﻿/*=================Scss Indexing=============
+/*=================Scss Indexing=============
 1.variables
 2.typography
 3.spacing
@@ -555,7 +555,7 @@ ol ul {
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
     h1 {
         font-size: 64px;
     }
@@ -15959,92 +15959,186 @@ nav ul li a {
 }
 
 .partner-right {
-    background-color: var(--color-primary-2);
-    height: 70px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: flex;
-    align-items: stretch;
-    padding: 0;
-}
-
-.partner-section-label {
-  font-family: var(--font-primary);
-  display: flex;
-  flex: 0 0 110px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 8px;
-  border-radius: 30px 0 0 30px;
-  background: #EBF4FC;
-  color: var(--color-primary);
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  text-align: center;
-  white-space: nowrap;
+    height: auto;
+    margin-top: 16px;
+    overflow: visible;
 }
 
 .partner-logo-track {
-    flex: 1;
-    min-width: 0;
-    width: auto;
-    will-change: transform;
-}
-
-.partner-logo-row {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    height: 38px;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     align-items: center;
-    opacity: 0.48;
-    transition: opacity 0.2s ease;
-}
-
-.partner-logo-row.is-active {
-    opacity: 1;
+    gap: 12px;
+    width: 100%;
 }
 
 .partner-logo {
     position: relative;
     display: flex;
-    height: 100%;
+    height: 76px;
     align-items: center;
     justify-content: center;
-    padding: 4px 12px;
+    min-width: 0;
+    padding: 8px 2px;
     overflow: hidden;
+    isolation: isolate;
+    animation: partner-logo-float 5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo::after {
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    bottom: 8px;
+    left: 20%;
+    height: 9px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, var(--partner-glow), transparent 72%);
+    content: "";
+    filter: blur(7px);
+    opacity: 0.58;
+    animation: partner-glow-pulse 3.8s ease-in-out infinite;
+    animation-delay: var(--partner-delay, 0s);
 }
 
 .partner-logo img {
     display: block;
     max-width: 100%;
-    max-height: 28px;
+    max-height: 46px;
     object-fit: contain;
-    transition: opacity 0.15s ease;
+    animation: partner-logo-breathe 5s ease-in-out infinite;
+    animation-delay: var(--partner-delay, 0s);
+    transition: transform 0.3s ease;
 }
 
-.partner-logo::after {
-    position: absolute;
-    inset: 2px;
-    display: grid;
-    place-items: center;
-    border-radius: 4px;
-    background: rgba(0, 92, 185, 0.94);
-    color: #FFFFFF;
-    content: attr(data-name);
-    font-size: 13px;
-    opacity: 0;
-    transition: opacity 0.15s ease;
+.partner-logo[data-name="Dell"] {
+    --partner-glow: #168bff;
+    --partner-delay: 0s;
+    animation-delay: var(--partner-delay);
 }
 
-.partner-logo:hover::after,
-.partner-logo:focus-visible::after {
-    opacity: 1;
+.partner-logo[data-name="DP"] {
+    --partner-glow: #168bff;
+    --partner-delay: 0.45s;
+    animation-delay: var(--partner-delay);
 }
 
-.partner-logo:hover img,
-.partner-logo:focus-visible img {
-    opacity: 0.12;
+.partner-logo[data-name="Exide"] {
+    --partner-glow: #168bff;
+    --partner-delay: 0.9s;
+    animation-delay: var(--partner-delay);
+}
+
+.partner-logo[data-name="Lenovo"] {
+    --partner-glow: #168bff;
+    --partner-delay: 1.35s;
+    animation-delay: var(--partner-delay);
+}
+
+.partner-logo[data-name="Sangfor"] {
+    --partner-glow: #168bff;
+    --partner-delay: 1.8s;
+    animation-delay: var(--partner-delay);
+}
+
+.partner-logo[data-name="Titan"] {
+    --partner-glow: #168bff;
+    --partner-delay: 2.25s;
+    animation-delay: var(--partner-delay);
+}
+
+.partner-logo[data-name="Dell"] img,
+.partner-logo[data-name="DP"] img {
+    flex: 0 0 150px;
+    width: 150px;
+    max-width: none;
+    max-height: none;
+}
+
+.partner-logo[data-name="Exide"] img {
+    filter: brightness(0) invert(1);
+}
+
+.partner-logo[data-name="Lenovo"] img {
+    filter: brightness(0) invert(1);
+}
+
+.partner-logo[data-name="Sangfor"] img {
+    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.8));
+}
+
+.partner-logo[data-name="Titan"] img {
+    filter: brightness(0) invert(1);
+}
+
+.partner-logo:hover {
+    z-index: 1;
+    animation: none;
+    transform: scale(1.06);
+}
+
+.partner-logo:hover::after {
+    animation: none;
+    opacity: 0.95;
+    transform: scaleX(1.15);
+}
+
+.partner-logo:hover img {
+    animation: none;
+    transform: scale(1.04);
+}
+
+@keyframes partner-logo-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes partner-logo-breathe {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.025);
+    }
+}
+
+@keyframes partner-glow-pulse {
+    0%, 100% {
+        opacity: 0.55;
+        transform: scaleX(0.85);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleX(1.2);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-two-main-wrapper-solaric {
+        height: auto;
+        min-height: 760px;
+    }
+
+    .banner-two-main-wrapper-solaric .container > .row > .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .banner-two-main-wrapper-solaric .banner-solari-2-content.ptb--200 {
+        padding: 78px 0 18px !important;
+    }
+
+    .banner-two-main-wrapper-solaric .hero-content .banner-solari-2-content {
+        padding: 0 0 170px !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -16052,12 +16146,54 @@ nav ul li a {
         font-size: 44px;
         line-height: 55px;
     }
+
+    .partner-logo-track {
+        display: flex;
+        gap: 12px;
+        max-width: 100%;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .partner-logo-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .partner-logo {
+        flex: 0 0 92px;
+    }
+
+    .partner-logo img {
+        max-height: 38px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .partner-logo,
+    .partner-logo::after,
+    .partner-logo img {
+        animation: none;
+        transition: none;
+    }
+
+    .partner-logo:hover {
+        transform: none;
+    }
 }
 
 @media only screen and (max-width: 575px) {
     .banner-solari-2-content .banner-title {
         font-size: 36px;
         line-height: 45px;
+    }
+
+    .banner-two-main-wrapper-solaric .banner-solari-2-content p.disc {
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
